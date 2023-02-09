@@ -1,0 +1,554 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', 'cursive';
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --maincolor:#518581;
+    --yellow:#ffb23f;
+    --white:white;
+    --black:black;
+    --grey:#afadb5;
+    --lightgrey:#f3f3f3;
+    --lgrey:#d0cecb;
+}
+
+.firstsection h1{
+    color: var(--black);
+    font-size: 80px;
+    text-align: center;
+    padding: 50px 50px 10px;
+}
+
+.firstsection p{
+    color: var(--grey);
+    font-size: 30px;
+    text-align: center;
+    padding:30px;
+}
+.firstsection img{
+    width: 100%;
+    padding: 2% 5.5%;
+}
+.hr{
+    border: 1px solid var(--lightgrey);
+    margin:0px 5.5%;
+}
+.secondsection{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    padding: 5.5%;
+    gap: 50px;
+}
+.secondsection div h1{
+    color: var(--maincolor);
+    font-size: 65px;
+    padding-bottom: 5%;
+}
+.secondsection div .label{
+    color: var(--black);
+    font-size: 28px;
+}
+.secondsection div .par{
+    color: var(--grey);
+    font-size: 22px;
+    padding-top: 2.5%;
+    line-height: 35px;
+}
+.portfolio{
+    color: var(--yellow);
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5.5%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:1%  5.5%;
+    gap: 150px;
+}
+.firstpart {
+    color: var(--black);
+    font-size: 50px;
+    font-weight: bold;
+}
+.secondpart p:nth-child(1){
+    color: var(--grey);
+    font-size: 20px;
+    line-height: 35px;
+
+}
+.secondpart p:nth-child(2){
+    color: var(--maincolor);
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 2.5%;
+}
+.secondpart p:nth-child(2):hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.photocards{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: repeat(2,1fr);
+    padding: 2.5% 5.5%;
+    gap: 30px;    
+}
+ .firstphoto{
+    grid-row: 1/3;
+}
+.secondpic2 , .thirdpic2{
+    display: none;
+}
+ .firstphoto img{
+    width:100%;
+    height: 100%;
+    
+}
+.secondphoto img{
+    width: 100%;
+    height: 100%;
+}
+.thirdphoto img{
+    width: 100%;
+    height: 100%;
+}  
+
+.firstphoto ,.secondphoto ,.thirdphoto{
+    position: relative;
+}
+.firstphoto .st , .secondphoto .st , .thirdphoto .st{
+    position: absolute;
+    bottom:100px;
+    color: var(--white);
+    padding: 5.5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+    position: absolute;
+    bottom:60px;
+    padding: 5.5%;
+    color: var(--lgrey);
+    font-size:18px;
+    
+}
+.firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+    position: absolute;
+    bottom:0px;
+    padding: 5.5%;
+    color: var(--white);
+    font-size: 25px;
+    
+}
+.firstphoto .rd:hover , .secondphoto .rd:hover , .thirdphoto .rd:hover{
+    cursor: pointer;
+    color:var(--maincolor);
+}
+.thirdsectionfooter{
+    padding: 6.5% 5.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.thirdsectionfooter .interest{
+    font-size: 50px;
+    font-weight: bold;
+}
+.talkbutton{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--maincolor);
+    padding: 15px 25px;
+}
+.talkbutton:hover{
+    border: 2px solid var(--maincolor);
+    background-color: var(--white);
+    cursor: pointer;
+}
+.talkbutton:hover p{
+    color:var(--maincolor);
+
+}
+.talkbutton:hover .arrow{
+    fill:var(--maincolor);
+}
+.talkbutton p{
+    color: var(--white);
+    font-size: 25px;
+}
+.arrow{
+    fill: var(--white);
+    width: 35px;
+    height: 35px;
+}
+@media (min-width:1291px) and (max-width:1600px) {
+    .firstsection p{
+        padding:0px 240px;
+    }
+}
+@media screen and (max-width:1290px){
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom: 85px;
+        font-size: 28px;
+
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:35px;
+        font-size: 18px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: -10px;
+        font-size: 24px;
+
+    }
+}
+@media screen and (max-width:1170px) {
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom: 60px;
+        font-size: 25px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:35px;
+        font-size: 13px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: -10px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1118px) {
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom: 60px;
+        font-size: 23px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:30px;
+        font-size: 12.5px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: -10px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:976px) {
+    .secondsection{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .photocards{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+    .secondpic1 , .thirdpic1{
+        display: none;
+    }
+    .secondpic2,.thirdpic2{
+        display: block;
+    }
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom:100px;
+        font-size: 50px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:60px;
+        font-size: 25px;
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: -10px;
+        font-size: 25px;
+    }
+    .firstphoto{
+        grid-row: 1/2;
+    }
+}
+@media screen and (max-width:870px) {
+    .firstsection h1{
+        font-size: 60px;
+        padding-bottom: 10px;
+    }
+    .firstsection p{
+        font-size: 30px;
+    }
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom:100px;
+        font-size: 40px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:60px;
+        font-size: 20px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: -10px;
+        font-size: 25px;
+    }
+    .thirdsectionfooter{
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width:727px) {
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom:100px;
+        font-size: 30px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:60px;
+        font-size: 17px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: -10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:686px) {
+    .secondsection{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .portfolio{
+        padding-top: 150px;
+    }
+    .thirdsectionfooter{
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+}
+@media screen and (max-width:590px) {
+    .firstpart{
+        font-size: 40px;
+    }
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom:100px;
+        font-size: 35px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:45px;
+        font-size: 18px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: -10px;
+        font-size: 23px;
+    }
+}
+@media screen and (max-width:512px) {
+    .interest p{
+        font-size: 40px;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    .firstsection p{
+        font-size: 25px;
+    }
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom:100px;
+        font-size: 30px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:45px;
+        font-size: 15px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: -10px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:366px) {
+    .firstsection h1{
+        font-size: 50px;
+    }
+    .firstsection p{
+        font-size: 20px;
+    }
+    .secondsection div h1{
+        font-size: 50px;
+    }
+
+    .secondsection div .label{
+        font-size: 23px;
+    }
+
+    .secondsection div .par{
+        font-size: 18px;
+    }
+    .firstpart{
+        font-size: 33.5px;
+    }
+    .secondpart p:nth-child(1){
+        font-size: 18px;
+    }
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom:80px;
+        font-size: 30px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:35px;
+        font-size: 18px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: 0px;
+        font-size: 20px;
+    }
+    .interest p{
+        font-size: 25px;
+    }
+    .talkbutton{
+        padding:7px;
+    }
+}
+@media screen and (max-width:330px) {
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom:70px;
+        font-size: 20px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:30px;
+        font-size: 13px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: -10px;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:287px) {
+    .firstsection h1{
+        font-size: 40px;
+        padding: 0px 3px;
+        padding-top: 35px;
+    }
+    .firstsection p{
+        font-size: 15px;
+        padding: 0px 3px;
+    }
+    .secondsection div h1{
+        font-size: 45px;
+    }
+    .secondsection div .label{
+        white-space: nowrap;        
+    }
+    .secondsection div .par{
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .firstpart{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .secondpart p:nth-child(1){
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .portfolio , .secondpart p:nth-child(2){
+        font-size: 13px;
+    }
+
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom:80px;
+        font-size: 17.5px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:35px;
+        font-size: 13px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: 0px;
+        font-size: 14px;
+    }
+    .interest p{
+        font-size: 20px;
+    }
+    .talkbutton{
+        padding:7px;
+    }
+}
+@media screen and (max-width:237px) {
+    .secondsection div .label{
+        font-size: 20px;
+    }
+    .secondsection div .par{
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom:65px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:35px;
+        font-size: 10px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: 0px;
+        font-size: 14px;
+    }
+    .talkbutton p{
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width:206px) {
+    .firstsection h1{
+        font-size: 35px;
+        padding: 0px 3px;
+        padding-top: 35px;
+    }
+    .firstsection p{
+        font-size: 13px;
+        padding: 0px 3px;
+    }
+    .secondsection div h1{
+        font-size: 40px;
+    }
+    .secondsection div .label{
+        font-size: 18px;       
+    }
+    .secondsection div .par{
+        line-height: 20px;
+        font-size: 13px;
+    }
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+        bottom:60px;
+        font-size: 13px;
+    }
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:25px;
+        font-size: 10px;
+
+    }
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+        bottom: 0px;
+        font-size: 12px;
+    }
+    .interest p{
+        font-size: 17px;
+    }
+    .talkbutton p{
+        font-size: 18px;
+    }
+}
