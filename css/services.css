@@ -16,6 +16,8 @@
     --lgrey:#d0cecb;
 }
 
+/* FIRSTSECTION */
+
 .firstsection h1{
     color: var(--black);
     font-size: 80px;
@@ -37,6 +39,9 @@
     border: 1px solid var(--lightgrey);
     margin:0px 5.5%;
 }
+
+/* SECOND SECTION */
+
 .secondsection{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
@@ -58,6 +63,9 @@
     padding-top: 2.5%;
     line-height: 35px;
 }
+
+/* THIRD SECTION */
+
 .portfolio{
     color: var(--yellow);
     font-size: 20px;
@@ -241,9 +249,23 @@
     }
 }
 
+@media screen and (max-width:1024px) {
+    .thirdsection .header .firstpart p{
+        font-size: 35px;
+    }
+    .header{
+        gap: 20px;
+    }
+}
 @media screen and (max-width:976px) {
     .secondsection{
         grid-template-columns: repeat(2 , 1fr);
+    }
+    .header{
+        gap: 20px;
+    }
+    .thirdsection .header .firstpart p{
+        font-size: 30px;
     }
     .photocards{
         grid-template-rows: repeat(3, 1fr);
@@ -272,6 +294,9 @@
     }
 }
 @media screen and (max-width:870px) {
+    .thirdsection .header .firstpart p{
+        font-size: 30px;
+    }
     .firstsection h1{
         font-size: 60px;
         padding-bottom: 10px;
