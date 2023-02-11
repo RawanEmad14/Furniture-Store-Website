@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="categoriesStyle.css">
+    <link rel="preconnect" href="https://stijndv.com">
+    <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Furniture Store</title>
+</head>
+
+<body>
+<!-- START NAV -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/Frame 1.png" alt="">
+            </div>
+            <div class="ul_items">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+            <div class="nav_icons">
+                <i class="bi bi-person-check"></i>
+                <i class="bi bi-person-add"></i>
+            </div>
+            <div class="toggleIcon">
+                <i class="bi bi-list"></i>
+            </div>
+        </nav>
+        <hr>
+    </header>
+<!-- END NAV -->
+
+<!-- START FIRST SECTION  -->
+    <div class="firstSection">
+        <div>
+            <h1>
+                Products
+            </h1>
+            <p>
+            We display products based on the latest products we have, if you
+            want to see our old products please enter the name of the item
+            </p>
+        </div>
+        <div class="Image">
+            <img src="images/Rectangle 1.png">
+        </div>
+    </div>
+<!-- END FIRST SECTION  -->
+
+<!-- START CATEGORY SECTION  -->
+    <div class="categorySection">
+        <button class="TotalCategory" id="Total" onclick="displayTotal();">Total</button>
+        <button class="category" id="ChairCategory" onclick="displayChairs();">Chair</button>
+        <button class="category" id="TableCategory" onclick="displayTables();">Table</button>
+        <button class="category" id="CupboardCategory" onclick="displayCupboard();">Cupboard</button>
+        <button class="category" id="DecorationCategory" onclick="displayDecoration();">Decoration</button>
+    </div>
+<!-- END CATEGORY SECTION  -->
+
+<!-- START PRODUCTS SECTION  -->
+    <main class="productSection">
+        <div class="product" id="chair1">
+            <img class="productImage" src="images/Rectangle 3.png">
+            <p>Chair</p>
+            <h3>White Aestetic Chair</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$63.47</h3>
+        </div>
+
+        <div class="product" id="cupboard1">
+            <img class="productImage" src="images/Rectangle 8.png">
+            <p>Cupboard</p>
+            <h3>Wooden Cupboard 3 Row</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$79.88</h3>
+        </div>
+
+        <div class="product" id="chair2">
+            <img class="productImage" src="images/Rectangle 10.png">
+            <p>Chair</p>
+            <h3>Minimalist Lounge Chair</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$14.74</h3>
+        </div>
+
+        <div class="product" id="table1">
+            <img class="productImage" src="images/Rectangle 11.png">
+            <p>Table</p>
+            <h3>Working Desk Setup</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$47.90</h3>
+        </div>
+
+        <div class="product" id="cupboard2">
+            <img class="productImage" src="images/Rectangle 12.png">
+            <p>Cupboard</p>
+            <h3>Minimalist White Cupboard</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$40.73</h3>
+        </div>
+
+        <div class="product"id="table2">
+            <img class="productImage" src="images/Rectangle 13.png">
+            <p>Table</p>
+            <h3>Wooden Dining Table</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$16.50</h3>
+        </div>
+
+        <div class="product" id="decoration1">
+            <img class="productImage" src="images/Rectangle 14.png">
+            <p>Decoration</p>
+            <h3>White Minimalist Vase</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$58.39</h3>
+        </div>
+
+        <div class="product" id="decoration2">
+            <img class="productImage" src="images/Rectangle 15.png">
+            <p>Decoration</p>
+            <h3>Plant With Clay Stand</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$61.49</h3>
+        </div>
+
+        <div class="product" id="decoration3">
+            <img class="productImage" src="images/Rectangle 16.png">
+            <p>Decoration</p>
+            <h3>Oval Gold Mirror</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$32.43</h3>
+        </div>
+
+        <div class="product" id="decoration4">
+            <img class="productImage" src="images/Rectangle 18.png">
+            <p>Decoration</p>
+            <h3>Wooden Mirror</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$63.47</h3>
+        </div>
+    </main>
+<!-- END PRODUCTS SECTION  -->
+
+    <hr class="hr">
+
+<!-- START FOOTER SECTION  -->
+    <footer>
+        <div class="firstPart">
+            <div class="footerLogo">
+                <img src="images/Frame 1.png" alt="">
+            </div>
+        <p class="Details">
+            Lalasia is digital agency that help you make better experience iaculis cras in.
+        </p>
+        </div>
+        <div class="secondPart">
+            <div class="footerProduct">
+                <h3>
+                    Product
+                </h3>
+                <p class="Details">New Arrivals</p>
+                <p class="Details">Best Selling</p>
+                <p class="Details">Home Decor</p>
+                <p class="Details">Kitchen Set</p>
+            </div>
+            <div class="footerServices">
+                <h3>
+                    Services
+                </h3>
+                <p class="Details">Catalog</p>
+                <p class="Details">Blog</p>
+                <p class="Details">FAQ</p>
+                <p class="Details">Pricing</p>
+            </div>
+            <div class="footerFollowus">
+                <h3>
+                    Follow Us
+                </h3>
+                <p class="Details">Facebook</p>
+                <p class="Details">Instagram</p>
+                <p class="Details">Twitter</p>
+            </div>
+        </div>
+
+    </footer>
+<!-- END FOOTER SECTION  -->
+
+</body>
+
+
+
+<script>
+    var toggleIcon= document.querySelector(".toggleIcon");
+    var ul_items= document.querySelector(".ul_items");
+    toggleIcon.addEventListener('click',function(){
+        ul_items.classList.toggle('d_flex');
+    });
+
+    function displayTotal(){
+        document.getElementById("Total").style.borderBottomStyle = "solid";
+        document.getElementById("Total").style.borderBottomColor = "#508480";
+
+        document.getElementById("ChairCategory").style.borderBottomStyle = "none";
+        document.getElementById("ChairCategory").style.borderBottomStyle = "none";
+        document.getElementById("TableCategory").style.borderBottomStyle = "none";
+        document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
+        document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
+
+        document.getElementById("chair1").style.display="inline";
+        document.getElementById("chair2").style.display = "inline";
+        document.getElementById("table1").style.display = "inline";
+        document.getElementById("table2").style.display = "inline";
+        document.getElementById("cupboard1").style.display = "inline";
+        document.getElementById("cupboard2").style.display = "inline";
+        document.getElementById("decoration1").style.display = "inline";
+        document.getElementById("decoration2").style.display = "inline";
+        document.getElementById("decoration3").style.display = "inline";
+        document.getElementById("decoration4").style.display = "inline";
+
+    }
+
+    function displayChairs(){
+        document.getElementById("ChairCategory").style.borderBottomStyle = "solid";
+        document.getElementById("ChairCategory").style.borderBottomColor = "#508480";
+
+        document.getElementById("Total").style.borderBottomStyle = "none";
+        document.getElementById("TableCategory").style.borderBottomStyle = "none";
+        document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
+        document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
+
+        document.getElementById("chair1").style.display="inline";
+        document.getElementById("chair2").style.display = "inline";
+
+        document.getElementById("table1").style.display="none";
+        document.getElementById("table2").style.display = "none";
+        document.getElementById("cupboard1").style.display="none";
+        document.getElementById("cupboard2").style.display = "none";
+        document.getElementById("decoration1").style.display="none";
+        document.getElementById("decoration2").style.display = "none";
+        document.getElementById("decoration3").style.display = "none";
+        document.getElementById("decoration4").style.display = "none";
+        
+    }
+    function displayTables(){
+        document.getElementById("TableCategory").style.borderBottomStyle = "solid";
+        document.getElementById("TableCategory").style.borderBottomColor = "#508480";
+
+        document.getElementById("Total").style.borderBottomStyle = "none";
+        document.getElementById("ChairCategory").style.borderBottomStyle = "none";
+        document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
+        document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
+
+        document.getElementById("table1").style.display="inline";
+        document.getElementById("table2").style.display = "inline";
+
+        document.getElementById("chair1").style.display="none";
+        document.getElementById("chair2").style.display = "none";
+        document.getElementById("cupboard1").style.display="none";
+        document.getElementById("cupboard2").style.display = "none";
+        document.getElementById("decoration1").style.display="none";
+        document.getElementById("decoration2").style.display = "none";
+        document.getElementById("decoration3").style.display = "none";
+        document.getElementById("decoration4").style.display = "none";
+    }
+    function displayCupboard(){
+        document.getElementById("CupboardCategory").style.borderBottomStyle = "solid";
+        document.getElementById("CupboardCategory").style.borderBottomColor = "#508480";
+
+        document.getElementById("Total").style.borderBottomStyle = "none";
+        document.getElementById("ChairCategory").style.borderBottomStyle = "none";
+        document.getElementById("TableCategory").style.borderBottomStyle = "none";
+        document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
+
+        document.getElementById("cupboard1").style.display="inline";
+        document.getElementById("cupboard2").style.display = "inline";
+
+        document.getElementById("chair1").style.display="none";
+        document.getElementById("chair2").style.display = "none";
+        document.getElementById("table1").style.display="none";
+        document.getElementById("table2").style.display = "none";
+        document.getElementById("decoration1").style.display="none";
+        document.getElementById("decoration2").style.display = "none";
+        document.getElementById("decoration3").style.display = "none";
+        document.getElementById("decoration4").style.display = "none";
+    }
+    function displayDecoration(){
+        document.getElementById("DecorationCategory").style.borderBottomStyle = "solid";
+        document.getElementById("DecorationCategory").style.borderBottomColor = "#508480";
+
+        document.getElementById("Total").style.borderBottomStyle = "none";
+        document.getElementById("ChairCategory").style.borderBottomStyle = "none";
+        document.getElementById("TableCategory").style.borderBottomStyle = "none";
+        document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
+
+        document.getElementById("decoration1").style.display="inline";
+        document.getElementById("decoration2").style.display = "inline";
+        document.getElementById("decoration3").style.display = "inline";
+        document.getElementById("decoration4").style.display = "inline";
+
+        document.getElementById("chair1").style.display="none";
+        document.getElementById("chair2").style.display = "none";
+        document.getElementById("table1").style.display="none";
+        document.getElementById("table2").style.display = "none";
+        document.getElementById("cupboard1").style.display="none";
+        document.getElementById("cupboard2").style.display = "none";
+    }
+</script>
+</html>
