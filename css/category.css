@@ -15,6 +15,37 @@ body{
     --grayColor: #AFADB5;
 }
 
+h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 44px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: var(--gray);
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+h4 {
+    margin: 0px;
+    font-size: 24px;
+}
+
+h5 {
+    margin: 0px;
+    font-size: 14px;
+}
+
 /* START NAV */
 nav {
     display: flex;
@@ -72,6 +103,7 @@ hr {
 /* START firstSection */
 .firstSection{
     text-align: center;
+    padding-top: 20px;
 }
 .firstSection p{
     line-height: 1.5;
@@ -94,12 +126,15 @@ hr {
 .category , .TotalCategory{
     cursor: pointer;
     border-style: none;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-width: 4px;
     padding-bottom: 10px;
 }
 .TotalCategory{
     border-bottom-color: var(--mainColor);
     border-bottom-style: solid;
+    border-width: 4px;
 }
 /* END categorySection */
 
