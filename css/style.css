@@ -17,6 +17,7 @@ body {
     --arrow: #A6D8D2;
     --gray: #AFADB5;
     --quote: #40B4A6;
+    --footerColor: #151411ae;
 }
 
 h1 {
@@ -48,6 +49,12 @@ h4 {
 h5 {
     margin: 0px;
     font-size: 14px;
+}
+
+h6 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 .container {
@@ -394,6 +401,33 @@ aside .article-image .layer {
 
 /* end article */
 
+/* START footer */
+footer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 10px 40px;
+    gap: 0px 60px;
+}
+
+.secondPart {
+    display: flex;
+    gap: 90px;
+}
+
+.Details {
+    color: var(--footerColor);
+}
+
+.firstPart p {
+    color: var(--footerColor);
+}
+
+.hr {
+    margin: 10px 35px;
+}
+
+/* END footer */
+
 @media screen and (max-width:768px) {
     h1 {
         font-size: 26px;
@@ -509,5 +543,13 @@ aside .article-image .layer {
     .review-grid {
         grid-template-columns: 1fr;
 
+    }
+
+    .cust-none {
+        display: none;
+    }
+
+    footer {
+        display: block;
     }
 }
