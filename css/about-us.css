@@ -20,6 +20,7 @@ body {
   --gray: #afadb5;
   --dark-gray: #444341;
   --light-gray: #eee;
+  --footerColor: #151411ae;
 }
 
 h1 {
@@ -59,7 +60,6 @@ h6 {
   margin-bottom: 40px;
 }
 
-
 /* START NAV */
 nav {
   display: flex;
@@ -76,7 +76,6 @@ nav {
   display: none;
 }
 
-
 nav ul {
   display: flex;
   list-style: none;
@@ -86,7 +85,6 @@ nav ul {
 
 nav ul li {
   padding: 10px 20px;
-
 }
 
 nav ul li:hover a {
@@ -109,7 +107,6 @@ nav .nav-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 nav .nav-icons .bi {
@@ -126,7 +123,6 @@ hr {
 .signUp {
   display: none;
 }
-
 
 /* END NAV */
 
@@ -261,15 +257,14 @@ h6,
   align-items: center;
   gap: 10px;
 }
-.talk:hover{
+.talk:hover {
   /* background-color: white; */
   color: var(--tealColor);
   border: 2px solid var(--tealColor);
   cursor: pointer;
 }
 .section-about-us .our-team hr {
-  border: 1px solid var(--light-gray);
-  margin-bottom: 70px;
+  border: 1px solid rgb(221, 214, 214);
 }
 /* our-team end */
 footer {
