@@ -196,12 +196,16 @@ hr {
     margin: 10px 0 10px 0;
 }
 
+.product .p1{
+    margin-bottom: 20px;
+}
+
 .product h3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.detailsButton {
+.detailsButton{
     padding: 10px 30px;
     color: white;
     background-color: var(--mainColor);
@@ -209,7 +213,9 @@ hr {
     border-color: var(--mainColor);
     border-radius: 50px;
     font-size: 15px;
-    position: relative;
+    position: absolute;
+    bottom: 19px;
+    right: 25px;
 }
 
 .detailsButton:hover {
