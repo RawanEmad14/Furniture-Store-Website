@@ -8,8 +8,10 @@
 }
 
 body {
-    margin: auto;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    /* margin: auto; */
+    /* overflow-x: hidden; */
 }
 
 :root {
