@@ -271,7 +271,7 @@ footer {
         gap: 15px 20px;
     }
     .secondPart {
-        gap: 25px;
+        /* gap: 25px; */
     }
 }
 
