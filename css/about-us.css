@@ -42,9 +42,9 @@ h5 {
   margin: 0px;
 }
 h6 {
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 40px;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 p {
   font-size: 18px;
@@ -242,7 +242,12 @@ h6,
   align-items: center;
   gap: 10px;
 }
-
+.talk:hover{
+  /* background-color: white; */
+  color: var(--tealColor);
+  border: 2px solid var(--tealColor);
+  cursor: pointer;
+}
 .section-about-us .our-team hr {
   border: 1px solid var(--light-gray);
   margin-bottom: 70px;
@@ -250,30 +255,28 @@ h6,
 /* our-team end */
 /* START footer */
 footer {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    padding: 50px 40px;
-    gap: 0px 60px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 50px 40px;
+  gap: 0px 60px;
 }
 
 .secondPart {
-    display: flex;
-    gap: 90px;
+  display: flex;
+  gap: 90px;
 }
 
 .Details {
-    color: var(--footerColor);
+  color: var(--footerColor);
 }
 
 .firstPart p {
-    color: var(--footerColor);
+  color: var(--footerColor);
 }
 
 .hr {
-    margin: 10px 35px;
+  margin: 10px 35px;
 }
 
 /* END footer */
 /* About-us end*/
-
-
