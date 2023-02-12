@@ -123,6 +123,12 @@ hr {
     border: 0.2px solid rgb(221, 214, 214);
 }
 
+.logIn,
+.signUp {
+    display: none;
+}
+
+
 /* END NAV */
 /* START HOME */
 #home {
@@ -231,7 +237,6 @@ hr {
 }
 
 .review-grid {
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -527,14 +532,6 @@ footer {
         display: none;
     }
 
-    .selected-product::-webkit-scrollbar {
-        width: 0;
-    }
-
-    .selected-product {
-        overflow-x: auto;
-    }
-
     .customer h4 {
         font-size: 14px;
         padding-left: 10px;
@@ -552,4 +549,10 @@ footer {
     footer {
         display: block;
     }
+
+    .logIn,
+    .signUp {
+        display: block;
+    }
+
 }
