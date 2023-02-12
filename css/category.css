@@ -47,6 +47,11 @@ h5 {
     margin: 0px;
     font-size: 14px;
 }
+h6 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
 
 /* START NAV */
 nav {
@@ -240,13 +245,14 @@ hr {
 footer {
     display: grid;
     grid-template-columns: 60% 40%;
-    padding: 10px 60px;
+    padding: 50px 40px;
+    gap: 0px 60px;
 }
 
 .secondPart {
     display: flex;
     gap: 90px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
 .Details {
@@ -265,7 +271,7 @@ footer {
         gap: 15px 20px;
     }
     .secondPart {
-        gap: 25px;
+        /* gap: 25px; */
     }
 }
 
@@ -285,9 +291,6 @@ footer {
         font-size: 14px;
         color: var(--gray);
     }
-    .category , .TotalCategory{
-        font-size: 20px;
-    }
     h3 {
         font-size: 16px;
         margin: 0px;
@@ -302,6 +305,9 @@ footer {
         margin: 0px;
         font-size: 12px;
     }
+    .category , .TotalCategory{
+        font-size: 20px;
+    }
     .toggleIcon {
         display: block;
     }
@@ -310,32 +316,31 @@ footer {
         padding: 5px 20px;
     }
 
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .ul_items {
+    .ul-items {
         display: none;
-        transition: 0.3s;
-        width: 100vw;
+        width: 100%;
     }
-    nav a {
-        background: none;
-    }
-    .ul_items ul{
-        flex-direction: column;
-        margin-right: 50px;
-        padding: 20px , 0;
-        text-align: center;
-    }
+
     nav ul li {
         width: 100%;
         text-align: center;
         padding: 15px 0px;
     }
-    nav .nav_icons {
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    nav .nav-icons {
         display: none;
     }
+
     .logIn , .signUp{
         display: block;
     }
