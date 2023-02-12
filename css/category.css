@@ -266,13 +266,33 @@ footer {
 /* END footer */
 
 /* START MEDIA QUERY */
-@media(max-width:1200px) {
+@media(max-width:1024px) {
     .productSection {
         gap: 15px 20px;
     }
+    /* .secondPart {
+        gap: 25px; 
+    } */
+    h1 {
+        font-size: 52px;
+        margin-bottom: 5px;
+    }
+    h2 {
+        font-size: 36px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-size: 20px;
+        margin: 0px;
+    }
 
-    .secondPart {
-        /* gap: 25px; */
+    h5 {
+        margin: 0px;
+        font-size: 14px;
+    }
+    footer {
+        display: block;
     }
 }
 
