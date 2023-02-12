@@ -1,0 +1,296 @@
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 0px;
+  }
+
+  h4 {
+    font-size: 16px;
+    margin: 0px;
+  }
+
+  h5 {
+    margin: 0px;
+    font-size: 12px;
+  }
+  p {
+    font-size: 14px;
+    color: var(--gray);
+  }
+  /* nav start */
+  .caption {
+    text-align: center;
+  }
+
+  .caption p {
+    margin: 0px;
+  }
+
+  .search-items .search-icon {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+  }
+
+  .search-items .search-button button {
+    padding: 10px 20px;
+    background-color: var(--tealColor);
+  }
+
+  .list {
+    display: block;
+  }
+
+  .ul-items {
+    display: none;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  nav .nav-icons {
+    display: none;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .layer .big-rectangle {
+    width: 90px;
+    height: 40px;
+  }
+
+  .icons {
+    display: none;
+  }
+  /* nav end */
+
+  /* About-us start */
+
+  /* our-mission start*/
+  .section-about-us .our-mission .content {
+    display: block;
+  }
+  .section-about-us .rate {
+    margin-bottom: 30px;
+  }
+  /* our-mission end*/
+
+  /* our-team start */
+  .section-about-us .our-team header aside p {
+    width: 51%;
+    margin-left: 0;
+  }
+  .section-about-us .our-team .content {
+    display: block;
+  }
+  .section-about-us .our-team .persons {
+    display: block;
+  }
+  .section-about-us .our-team .person {
+    margin-bottom: 20px;
+  }
+  .section-about-us .our-team footer {
+    display: block;
+  }
+  .section-about-us .our-team .talk {
+    margin-top: 20px;
+  }
+  /* our-team end */
+
+ footer {
+        display: block;
+    }
+
+    .logIn,
+    .signUp {
+        display: block;
+    }
+}
+
+/* About-us end*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 54px;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 38px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 23px;
+    margin: 0px;
+  }
+
+  h4 {
+    font-size: 22px;
+    margin: 0px;
+  }
+
+  h5 {
+    margin: 0px;
+    font-size: 13px;
+  }
+  p {
+    font-size: 16px;
+    color: var(--gray);
+  }
+  /* nav start */
+  nav{
+    margin-left: 20px;
+  }
+  .caption {
+    text-align: center;
+  }
+
+  .caption p {
+    margin: 0px;
+  }
+
+  .search-items .search-icon {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+  }
+
+  .search-items .search-button button {
+    padding: 15px 25px;
+    background-color: var(--tealColor);
+  }
+
+  .list {
+    display: block;
+  }
+
+  .ul-items {
+    display: none;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 25px 0px;
+  }
+
+  nav .nav-icons {
+    display: none;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .layer .big-rectangle {
+    width: 100px;
+    height: 50px;
+  }
+
+  .icons {
+    display: none;
+  }
+  /* nav end */
+
+  /* About-us start */
+
+  /* our-mission start*/
+  .section-about-us .our-mission .content {
+    display: block;
+  }
+  .section-about-us .rate {
+    margin-bottom: 30px;
+  }
+  /* our-mission end*/
+
+  /* our-team start */
+  .section-about-us .our-team header aside p {
+    width: 51%;
+    margin-left: 0;
+  }
+  .section-about-us .our-team .content {
+    display: block;
+  }
+  .section-about-us .our-team .persons {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .section-about-us .our-team .person {
+    margin-bottom: 20px;
+  }
+  .section-about-us .our-team footer {
+    display: block;
+  }
+  .section-about-us .our-team .talk {
+    margin-top: 20px;
+  }
+  /* our-team end */
+/* footer start */
+  footer {
+        display: block;
+    }
+
+    .logIn,
+    .signUp {
+        display: block;
+    }
+/* footer end  */
+}
+
+/* About-us end*/
