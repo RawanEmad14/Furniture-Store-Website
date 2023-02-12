@@ -410,7 +410,7 @@ aside .article-image .layer {
 footer {
     display: grid;
     grid-template-columns: 60% 40%;
-    padding: 10px 40px;
+    padding: 50px 40px;
     gap: 0px 60px;
 }
 

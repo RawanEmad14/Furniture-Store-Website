@@ -61,93 +61,103 @@
     <!-- START CATEGORY SECTION  -->
     <div class="categorySection">
         <button class="TotalCategory" id="Total" onclick="displayTotal();">Total</button>
-        <button class="category" id="ChairCategory" onclick="displayChairs();">Chair</button>
-        <button class="category" id="TableCategory" onclick="displayTables();">Table</button>
-        <button class="category" id="CupboardCategory" onclick="displayCupboard();">Cupboard</button>
-        <button class="category" id="DecorationCategory" onclick="displayDecoration();">Decoration</button>
+        <button class="category ChairCategory" id="ChairCategory" onclick="displayChairs();">Chair</button>
+        <button class="category TableCategory" id="TableCategory" onclick="displayTables();">Table</button>
+        <button class="category CupboardCategory" id="CupboardCategory" onclick="displayCupboard();">Cupboard</button>
+        <button class="category DecorationCategory" id="DecorationCategory" onclick="displayDecoration();">Decoration</button>
     </div>
     <!-- END CATEGORY SECTION  -->
 
     <!-- START PRODUCTS SECTION  -->
     <main class="productSection">
-        <div class="product" id="chair1">
+        <div class="product chair">
             <img class="productImage" src="../images/Rectangle 3.png">
             <p>Chair</p>
             <h3>White Aestetic Chair</h3>
-            <p>Combination of wood and wool</p>
+            <p class="p1">Combination of wood and wool</p>
             <h3>$63.47</h3>
+            <button class="detailsButton" onclick="goToDetails();">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
 
-        <div class="product" id="cupboard1">
+        <div class="product cupboard">
             <img class="productImage" src="../images/Rectangle 8.png">
             <p>Cupboard</p>
             <h3>Wooden Cupboard 3 Row</h3>
-            <p>Combination of wood and wool</p>
+            <p class="p1">Combination of wood and wool</p>
             <h3>$79.88</h3>
+            <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
 
-        <div class="product" id="chair2">
+        <div class="product chair">
             <img class="productImage" src="../images/Rectangle 10.png">
             <p>Chair</p>
             <h3>Minimalist Lounge Chair</h3>
-            <p>Combination of wood and wool</p>
+            <p class="p1">Combination of wood and wool</p>
             <h3>$14.74</h3>
+            <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
 
-        <div class="product" id="table1">
+        <div class="product table">
             <img class="productImage" src="../images/Rectangle 11.png">
             <p>Table</p>
             <h3>Working Desk Setup</h3>
-            <p>Combination of wood and wool</p>
+            <p class="p1">Combination of wood and wool</p>
             <h3>$47.90</h3>
+            <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
 
-        <div class="product" id="cupboard2">
+        <div class="product cupboard">
             <img class="productImage" src="../images/Rectangle 12.png">
             <p>Cupboard</p>
             <h3>Minimalist White Cupboard</h3>
-            <p>Combination of wood and wool</p>
+            <p class="p1">Combination of wood and wool</p>
             <h3>$40.73</h3>
+            <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
 
-        <div class="product" id="table2">
+        <div class="product table">
             <img class="productImage" src="../images/Rectangle 13.png">
             <p>Table</p>
             <h3>Wooden Dining Table</h3>
-            <p>Combination of wood and wool</p>
+            <p class="p1">Combination of wood and wool</p>
             <h3>$16.50</h3>
+            <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
 
-        <div class="product" id="decoration1">
+        <div class="product decoration">
             <img class="productImage" src="../images/Rectangle 14.png">
             <p>Decoration</p>
             <h3>White Minimalist Vase</h3>
-            <p>Combination of wood and wool</p>
+            <p class="p1">Combination of wood and wool</p>
             <h3>$58.39</h3>
+            <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
 
-        <div class="product" id="decoration2">
+        <div class="product decoration">
             <img class="productImage" src="../images/Rectangle 15.png">
             <p>Decoration</p>
             <h3>Plant With Clay Stand</h3>
-            <p>Combination of wood and wool</p>
+            <p class="p1">Combination of wood and wool</p>
             <h3>$61.49</h3>
+            <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
 
-        <div class="product" id="decoration3">
+        <div class="product decoration">
             <img class="productImage" src="../images/Rectangle 16.png">
             <p>Decoration</p>
             <h3>Oval Gold Mirror</h3>
-            <p>Combination of wood and wool</p>
+            <p class="p1">Combination of wood and wool</p>
             <h3>$32.43</h3>
+            <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
 
-        <div class="product" id="decoration4">
+        <div class="product decoration">
             <img class="productImage" src="../images/Rectangle 18.png">
             <p>Decoration</p>
             <h3>Wooden Mirror</h3>
-            <p>Combination of wood and wool</p>
+            <p class="p1">Combination of wood and wool</p>
             <h3>$63.47</h3>
+            <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
     </main>
     <!-- END PRODUCTS SECTION  -->
@@ -207,6 +217,11 @@
         ul_items.classList.toggle('d_flex');
     });
 
+    const chairs=document.querySelectorAll(".chair");
+    const cupboards=document.querySelectorAll(".cupboard");
+    const tables=document.querySelectorAll(".table");
+    const decoration=document.querySelectorAll(".decoration");
+
     function displayTotal() {
         document.getElementById("Total").style.borderBottomStyle = "solid";
 
@@ -216,17 +231,18 @@
         document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
         document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
-        document.getElementById("chair1").style.display = "inline";
-        document.getElementById("chair2").style.display = "inline";
-        document.getElementById("table1").style.display = "inline";
-        document.getElementById("table2").style.display = "inline";
-        document.getElementById("cupboard1").style.display = "inline";
-        document.getElementById("cupboard2").style.display = "inline";
-        document.getElementById("decoration1").style.display = "inline";
-        document.getElementById("decoration2").style.display = "inline";
-        document.getElementById("decoration3").style.display = "inline";
-        document.getElementById("decoration4").style.display = "inline";
-
+        for(let i=0;i<chairs.length;i++){
+            chairs[i].style.display="inline";
+        }
+        for(let i=0;i<cupboards.length;i++){
+            cupboards[i].style.display="inline";
+        }
+        for(let i=0;i<tables.length;i++){
+            tables[i].style.display="inline";
+        }
+        for(let i=0;i<decoration.length;i++){
+            decoration[i].style.display="inline";
+        }
     }
 
     function displayChairs() {
@@ -237,18 +253,18 @@
         document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
         document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
-        document.getElementById("chair1").style.display = "inline";
-        document.getElementById("chair2").style.display = "inline";
-
-        document.getElementById("table1").style.display = "none";
-        document.getElementById("table2").style.display = "none";
-        document.getElementById("cupboard1").style.display = "none";
-        document.getElementById("cupboard2").style.display = "none";
-        document.getElementById("decoration1").style.display = "none";
-        document.getElementById("decoration2").style.display = "none";
-        document.getElementById("decoration3").style.display = "none";
-        document.getElementById("decoration4").style.display = "none";
-
+        for(let i=0;i<chairs.length;i++){
+            chairs[i].style.display="inline";
+        }
+        for(let i=0;i<cupboards.length;i++){
+            cupboards[i].style.display= "none";
+        }
+        for(let i=0;i<tables.length;i++){
+            tables[i].style.display= "none";
+        }
+        for(let i=0;i<decoration.length;i++){
+            decoration[i].style.display= "none";
+        }
     }
     function displayTables() {
         document.getElementById("TableCategory").style.borderBottomStyle = "solid";
@@ -258,17 +274,18 @@
         document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
         document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
-        document.getElementById("table1").style.display = "inline";
-        document.getElementById("table2").style.display = "inline";
-
-        document.getElementById("chair1").style.display = "none";
-        document.getElementById("chair2").style.display = "none";
-        document.getElementById("cupboard1").style.display = "none";
-        document.getElementById("cupboard2").style.display = "none";
-        document.getElementById("decoration1").style.display = "none";
-        document.getElementById("decoration2").style.display = "none";
-        document.getElementById("decoration3").style.display = "none";
-        document.getElementById("decoration4").style.display = "none";
+        for(let i=0;i<chairs.length;i++){
+                chairs[i].style.display="none";
+            }
+            for(let i=0;i<tables.length;i++){
+                tables[i].style.display= "inline";
+            }
+            for(let i=0;i<cupboards.length;i++){
+                cupboards[i].style.display= "none";
+            }
+            for(let i=0;i<decoration.length;i++){
+                decoration[i].style.display= "none";
+            }
     }
     function displayCupboard() {
         document.getElementById("CupboardCategory").style.borderBottomStyle = "solid";
@@ -278,17 +295,18 @@
         document.getElementById("TableCategory").style.borderBottomStyle = "none";
         document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
-        document.getElementById("cupboard1").style.display = "inline";
-        document.getElementById("cupboard2").style.display = "inline";
-
-        document.getElementById("chair1").style.display = "none";
-        document.getElementById("chair2").style.display = "none";
-        document.getElementById("table1").style.display = "none";
-        document.getElementById("table2").style.display = "none";
-        document.getElementById("decoration1").style.display = "none";
-        document.getElementById("decoration2").style.display = "none";
-        document.getElementById("decoration3").style.display = "none";
-        document.getElementById("decoration4").style.display = "none";
+        for(let i=0;i<chairs.length;i++){
+            chairs[i].style.display="none";
+        }
+        for(let i=0;i<tables.length;i++){
+            tables[i].style.display= "none";
+        }
+        for(let i=0;i<cupboards.length;i++){
+            cupboards[i].style.display= "inline";
+        }
+        for(let i=0;i<decoration.length;i++){
+            decoration[i].style.display= "none";
+        }
     }
     function displayDecoration() {
         document.getElementById("DecorationCategory").style.borderBottomStyle = "solid";
@@ -298,18 +316,22 @@
         document.getElementById("TableCategory").style.borderBottomStyle = "none";
         document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
 
-        document.getElementById("decoration1").style.display = "inline";
-        document.getElementById("decoration2").style.display = "inline";
-        document.getElementById("decoration3").style.display = "inline";
-        document.getElementById("decoration4").style.display = "inline";
-
-        document.getElementById("chair1").style.display = "none";
-        document.getElementById("chair2").style.display = "none";
-        document.getElementById("table1").style.display = "none";
-        document.getElementById("table2").style.display = "none";
-        document.getElementById("cupboard1").style.display = "none";
-        document.getElementById("cupboard2").style.display = "none";
+        for(let i=0;i<chairs.length;i++){
+            chairs[i].style.display="none";
+        }
+        for(let i=0;i<tables.length;i++){
+            tables[i].style.display= "none";
+        }
+        for(let i=0;i<cupboards.length;i++){
+            cupboards[i].style.display= "none";
+        }
+        for(let i=0;i<decoration.length;i++){
+            decoration[i].style.display= "inline";
+        }
     }
+    function goToDetails(){
+            window.location.href = 'product-detail.html';
+        }
 </script>
 
 </html>
