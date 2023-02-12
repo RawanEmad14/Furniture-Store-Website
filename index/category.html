@@ -76,7 +76,7 @@
             <h3>White Aestetic Chair</h3>
             <p>Combination of wood and wool</p>
             <h3>$63.47</h3>
-            <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
+            <button class="detailsButton" onclick="goToDetails();">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
 
         <div class="product cupboard">
@@ -231,17 +231,18 @@
         document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
         document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
-        document.getElementById("chair1").style.display="inline";
-        document.getElementById("chair2").style.display = "inline";
-        document.getElementById("table1").style.display = "inline";
-        document.getElementById("table2").style.display = "inline";
-        document.getElementById("cupboard1").style.display = "inline";
-        document.getElementById("cupboard2").style.display = "inline";
-        document.getElementById("decoration1").style.display = "inline";
-        document.getElementById("decoration2").style.display = "inline";
-        document.getElementById("decoration3").style.display = "inline";
-        document.getElementById("decoration4").style.display = "inline";
-
+        for(let i=0;i<chairs.length;i++){
+            chairs[i].style.display="inline";
+        }
+        for(let i=0;i<cupboards.length;i++){
+            cupboards[i].style.display="inline";
+        }
+        for(let i=0;i<tables.length;i++){
+            tables[i].style.display="inline";
+        }
+        for(let i=0;i<decoration.length;i++){
+            decoration[i].style.display="inline";
+        }
     }
 
     function displayChairs() {
@@ -252,18 +253,18 @@
         document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
         document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
-        document.getElementById("chair1").style.display="inline";
-        document.getElementById("chair2").style.display = "inline";
-
-        document.getElementById("table1").style.display="none";
-        document.getElementById("table2").style.display = "none";
-        document.getElementById("cupboard1").style.display="none";
-        document.getElementById("cupboard2").style.display = "none";
-        document.getElementById("decoration1").style.display="none";
-        document.getElementById("decoration2").style.display = "none";
-        document.getElementById("decoration3").style.display = "none";
-        document.getElementById("decoration4").style.display = "none";
-        
+        for(let i=0;i<chairs.length;i++){
+            chairs[i].style.display="inline";
+        }
+        for(let i=0;i<cupboards.length;i++){
+            cupboards[i].style.display= "none";
+        }
+        for(let i=0;i<tables.length;i++){
+            tables[i].style.display= "none";
+        }
+        for(let i=0;i<decoration.length;i++){
+            decoration[i].style.display= "none";
+        }
     }
     function displayTables() {
         document.getElementById("TableCategory").style.borderBottomStyle = "solid";
@@ -273,17 +274,18 @@
         document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
         document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
-        document.getElementById("table1").style.display="inline";
-        document.getElementById("table2").style.display = "inline";
-
-        document.getElementById("chair1").style.display="none";
-        document.getElementById("chair2").style.display = "none";
-        document.getElementById("cupboard1").style.display="none";
-        document.getElementById("cupboard2").style.display = "none";
-        document.getElementById("decoration1").style.display="none";
-        document.getElementById("decoration2").style.display = "none";
-        document.getElementById("decoration3").style.display = "none";
-        document.getElementById("decoration4").style.display = "none";
+        for(let i=0;i<chairs.length;i++){
+                chairs[i].style.display="none";
+            }
+            for(let i=0;i<tables.length;i++){
+                tables[i].style.display= "inline";
+            }
+            for(let i=0;i<cupboards.length;i++){
+                cupboards[i].style.display= "none";
+            }
+            for(let i=0;i<decoration.length;i++){
+                decoration[i].style.display= "none";
+            }
     }
     function displayCupboard() {
         document.getElementById("CupboardCategory").style.borderBottomStyle = "solid";
@@ -293,17 +295,18 @@
         document.getElementById("TableCategory").style.borderBottomStyle = "none";
         document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
-        document.getElementById("cupboard1").style.display="inline";
-        document.getElementById("cupboard2").style.display = "inline";
-
-        document.getElementById("chair1").style.display="none";
-        document.getElementById("chair2").style.display = "none";
-        document.getElementById("table1").style.display="none";
-        document.getElementById("table2").style.display = "none";
-        document.getElementById("decoration1").style.display="none";
-        document.getElementById("decoration2").style.display = "none";
-        document.getElementById("decoration3").style.display = "none";
-        document.getElementById("decoration4").style.display = "none";
+        for(let i=0;i<chairs.length;i++){
+            chairs[i].style.display="none";
+        }
+        for(let i=0;i<tables.length;i++){
+            tables[i].style.display= "none";
+        }
+        for(let i=0;i<cupboards.length;i++){
+            cupboards[i].style.display= "inline";
+        }
+        for(let i=0;i<decoration.length;i++){
+            decoration[i].style.display= "none";
+        }
     }
     function displayDecoration() {
         document.getElementById("DecorationCategory").style.borderBottomStyle = "solid";
@@ -313,17 +316,21 @@
         document.getElementById("TableCategory").style.borderBottomStyle = "none";
         document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
 
-        document.getElementById("decoration1").style.display="inline";
-        document.getElementById("decoration2").style.display = "inline";
-        document.getElementById("decoration3").style.display = "inline";
-        document.getElementById("decoration4").style.display = "inline";
-
-        document.getElementById("chair1").style.display="none";
-        document.getElementById("chair2").style.display = "none";
-        document.getElementById("table1").style.display="none";
-        document.getElementById("table2").style.display = "none";
-        document.getElementById("cupboard1").style.display="none";
-        document.getElementById("cupboard2").style.display = "none";
+        for(let i=0;i<chairs.length;i++){
+            chairs[i].style.display="none";
+        }
+        for(let i=0;i<tables.length;i++){
+            tables[i].style.display= "none";
+        }
+        for(let i=0;i<cupboards.length;i++){
+            cupboards[i].style.display= "none";
+        }
+        for(let i=0;i<decoration.length;i++){
+            decoration[i].style.display= "inline";
+        }
+        function goToDetails(){
+            window.location.href = "product-detail.html";
+        }
     }
 </script>
 
