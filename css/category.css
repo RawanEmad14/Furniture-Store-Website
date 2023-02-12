@@ -13,8 +13,9 @@ body {
 }
 
 :root {
-    --mainColor: #508480;
+    --mainColor: #518581;
     --grayColor: #AFADB5;
+    --footerColor: #151411ae;
 }
 
 h1 {
@@ -256,7 +257,7 @@ footer {
 }
 
 .Details {
-    color: var(--grayColor);
+    color: var(--footerColor);
 }
 
 .hr {
