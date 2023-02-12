@@ -60,11 +60,11 @@
 
     <!-- START CATEGORY SECTION  -->
     <div class="categorySection">
-        <button class="TotalCategory" id="Total" onclick="displayTotal();">Total</button>
-        <button class="category ChairCategory" id="ChairCategory" onclick="displayChairs();">Chair</button>
-        <button class="category TableCategory" id="TableCategory" onclick="displayTables();">Table</button>
-        <button class="category CupboardCategory" id="CupboardCategory" onclick="displayCupboard();">Cupboard</button>
-        <button class="category DecorationCategory" id="DecorationCategory" onclick="displayDecoration();">Decoration</button>
+        <button class="TotalCategory cat" id="Total" onclick="displayTotal();">Total</button>
+        <button class="category ChairCategory cat" id="ChairCategory" onclick="displayChairs();">Chair</button>
+        <button class="category TableCategory cat" id="TableCategory" onclick="displayTables();">Table</button>
+        <button class="category CupboardCategory cat" id="CupboardCategory" onclick="displayCupboard();">Cupboard</button>
+        <button class="category DecorationCategory cat" id="DecorationCategory" onclick="displayDecoration();">Decoration</button>
     </div>
     <!-- END CATEGORY SECTION  -->
 
@@ -222,14 +222,21 @@
     const tables=document.querySelectorAll(".table");
     const decoration=document.querySelectorAll(".decoration");
 
+    const categryList=document.querySelectorAll(".cat");
+
     function displayTotal() {
+
+        for(let i=0;i<categryList.length;i++){
+        categryList[i].style.borderBottomStyle="none";
+        }
+
         document.getElementById("Total").style.borderBottomStyle = "solid";
 
-        document.getElementById("ChairCategory").style.borderBottomStyle = "none";
-        document.getElementById("ChairCategory").style.borderBottomStyle = "none";
-        document.getElementById("TableCategory").style.borderBottomStyle = "none";
-        document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
-        document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
+        // document.getElementById("ChairCategory").style.borderBottomStyle = "none";
+        // document.getElementById("ChairCategory").style.borderBottomStyle = "none";
+        // document.getElementById("TableCategory").style.borderBottomStyle = "none";
+        // document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
+        // document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="inline";
@@ -246,12 +253,16 @@
     }
 
     function displayChairs() {
+        for(let i=0;i<categryList.length;i++){
+        categryList[i].style.borderBottomStyle="none";
+        }
+
         document.getElementById("ChairCategory").style.borderBottomStyle = "solid";
 
-        document.getElementById("Total").style.borderBottomStyle = "none";
-        document.getElementById("TableCategory").style.borderBottomStyle = "none";
-        document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
-        document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
+        // document.getElementById("Total").style.borderBottomStyle = "none";
+        // document.getElementById("TableCategory").style.borderBottomStyle = "none";
+        // document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
+        // document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="inline";
@@ -267,12 +278,17 @@
         }
     }
     function displayTables() {
+
+        for(let i=0;i<categryList.length;i++){
+        categryList[i].style.borderBottomStyle="none";
+        }
+
         document.getElementById("TableCategory").style.borderBottomStyle = "solid";
 
-        document.getElementById("Total").style.borderBottomStyle = "none";
-        document.getElementById("ChairCategory").style.borderBottomStyle = "none";
-        document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
-        document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
+        // document.getElementById("Total").style.borderBottomStyle = "none";
+        // document.getElementById("ChairCategory").style.borderBottomStyle = "none";
+        // document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
+        // document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
         for(let i=0;i<chairs.length;i++){
                 chairs[i].style.display="none";
@@ -288,12 +304,17 @@
             }
     }
     function displayCupboard() {
+
+        for(let i=0;i<categryList.length;i++){
+        categryList[i].style.borderBottomStyle="none";
+        }
+
         document.getElementById("CupboardCategory").style.borderBottomStyle = "solid";
 
-        document.getElementById("Total").style.borderBottomStyle = "none";
-        document.getElementById("ChairCategory").style.borderBottomStyle = "none";
-        document.getElementById("TableCategory").style.borderBottomStyle = "none";
-        document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
+        // document.getElementById("Total").style.borderBottomStyle = "none";
+        // document.getElementById("ChairCategory").style.borderBottomStyle = "none";
+        // document.getElementById("TableCategory").style.borderBottomStyle = "none";
+        // document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="none";
@@ -309,12 +330,17 @@
         }
     }
     function displayDecoration() {
+
+        for(let i=0;i<categryList.length;i++){
+        categryList[i].style.borderBottomStyle="none";
+        }
+
         document.getElementById("DecorationCategory").style.borderBottomStyle = "solid";
 
-        document.getElementById("Total").style.borderBottomStyle = "none";
-        document.getElementById("ChairCategory").style.borderBottomStyle = "none";
-        document.getElementById("TableCategory").style.borderBottomStyle = "none";
-        document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
+        // document.getElementById("Total").style.borderBottomStyle = "none";
+        // document.getElementById("ChairCategory").style.borderBottomStyle = "none";
+        // document.getElementById("TableCategory").style.borderBottomStyle = "none";
+        // document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
 
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="none";
