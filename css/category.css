@@ -245,13 +245,14 @@ hr {
 footer {
     display: grid;
     grid-template-columns: 60% 40%;
-    padding: 10px 60px;
+    padding: 50px 40px;
+    gap: 0px 60px;
 }
 
 .secondPart {
     display: flex;
     gap: 90px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
 .Details {
