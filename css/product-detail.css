@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   background-color: var(--white);
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
 }
 
-:root{
-  --black:black;
+:root {
+  --black: black;
   --white: #FFFFFF;
   --mainColor: #518581;
   --gray: #AFADB5;
   --footerColor: #151411ae;
 }
+
 h1 {
   font-size: 64px;
   margin-bottom: 10px;
@@ -120,36 +122,36 @@ hr {
 
 /* END NAV */
 
-.page1{
+.page1 {
   display: flex;
   align-items: center;
 }
 
-.first-half{
+.first-half {
   width: 50%;
   margin: 0;
 }
 
-.first-half img{
+.first-half img {
   width: 90%;
   padding: 50px 0px 50px 50px;
 }
 
 
-.second-half{
+.second-half {
   width: 50%;
   padding: 70px 70px 70px 0px;
   display: flex;
   flex-direction: column;
 }
 
-.title{
+.title {
   font-size: 25px;
   color: black;
   padding-bottom: 9px;
 }
 
-.paragraph1{
+.paragraph1 {
   color: var(--gray);
   line-height: 180%;
   font-weight: 500;
@@ -157,40 +159,40 @@ hr {
   padding-bottom: 20px;
 }
 
-.color-word{
+.color-word {
   font-weight: 700;
   font-size: 19px;
 }
 
-.colors{
+.colors {
   width: 40%;
 }
 
-.paragraph2{
+.paragraph2 {
   color: var(--gray);
   font-weight: 500;
   font-size: 18px;
   padding: 30px 0px 30px 0px;
 }
 
-.paragraph2 span{
+.paragraph2 span {
   color: var(--mainColor);
   font-size: 18px;
 }
 
-.price{
+.price {
   font-weight: 700;
   font-size: 33px;
   padding: 10px 0px 40px 0px;
 }
 
-.buttons{
+.buttons {
   display: flex;
   gap: 20px;
 }
 
 .btn1,
-.btn2{
+.btn2 {
   color: var(--white);
   font-weight: 700;
   font-size: 18px;
@@ -203,25 +205,25 @@ hr {
   cursor: pointer;
 }
 
-.btn1{
+.btn1 {
   background-color: var(--mainColor);
   color: var(--white);
 
 }
 
-.btn2{
+.btn2 {
   background-color: var(--white);
   color: var(--black);
 }
 
-.btn1:hover{
+.btn1:hover {
   border: 2px solid var(--mainColor);
   background-color: var(--white);
   cursor: pointer;
   color: var(--mainColor);
 }
 
-.btn2:hover{
+.btn2:hover {
   border: 2px solid var(--mainColor);
   background-color: var(--white);
   cursor: pointer;
@@ -229,52 +231,52 @@ hr {
 }
 
 /* page2 */
-.page2{
+.page2 {
   display: flex;
   flex-direction: column;
   padding: 50px;
   padding-top: 10px;
 }
 
-.title2{
+.title2 {
   font-weight: 700;
   font-size: 30px;
-  padding:10px;
+  padding: 10px;
   padding-left: 0px;
 }
 
-.container{
+.container {
   display: flex;
   gap: 15px;
   justify-content: center;
 }
 
 .img1,
-.img2, 
-.img3{
+.img2,
+.img3 {
   width: 99.9%;
 }
 
-.decoration{
+.decoration {
   color: var(--gray);
   font-weight: 700;
   font-size: 17px;
   padding: 15px 0;
-} 
+}
 
-.name{
+.name {
   font-weight: 700;
   font-size: 26px;
   padding-bottom: 10px;
 }
 
-.discription{
+.discription {
   font-weight: 500;
   font-size: 18px;
   color: var(--gray);
 }
 
-.price2{
+.price2 {
   font-weight: 700;
   font-size: 24px;
   padding: 15px 0;
@@ -394,7 +396,7 @@ footer {
 }
 
 @media screen and (max-width:970px) {
-  
+
   .container {
     flex-direction: column;
     width: 80%;
@@ -430,5 +432,9 @@ footer {
   .btn1,
   .btn2 {
     width: 100%;
+  }
+
+  footer {
+    display: block;
   }
 }
