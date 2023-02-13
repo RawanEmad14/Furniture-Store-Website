@@ -194,6 +194,36 @@ hr {
     color: white;
 }
 
+/* form {
+    background-color: white;
+    position: absolute;
+    width: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+}
+
+form input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+form button {
+    background-color: var(--tealColor);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+form .bi-search {
+    align-self: center;
+    padding: 10px;
+
+} */
+
 /* END HOME */
 /* START PRODUCT */
 
