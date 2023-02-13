@@ -3,8 +3,15 @@
 }
 
 :root {
-    --mainColor: #518581;
-    --grayColor: #AFADB5;
+    --tealColor: #518581;
+  --orange: #ffb23f;
+  --arrow: #a6d8d2;
+  --black: #151411;
+  --gray: #afadb5;
+  --dark-gray: #444341;
+  --light-gray: #eee;
+  --footerColor: #151411ae;
+
     
 }
 .body {
@@ -66,6 +73,8 @@ h1 {
     width: 200px;
     height: 75px;
     border-radius: 5px;
+    border-color: var(--mainColor);
+    color: white;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -73,11 +82,16 @@ h1 {
 }
 
 .submit:hover {
-    background-color: var(--grayColor);
+    background-color: white;
+    border-color: var(--mainColor);
+    color: var(--mainColor);
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
 .bottom {
     font-size: 16px;
+}
+a{
+    color: green;
 }
