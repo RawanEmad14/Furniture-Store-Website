@@ -269,7 +269,7 @@ h6,
 /* our-team end */
 footer {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 40%;
   padding: 50px 40px;
   gap: 0px 60px;
 }
