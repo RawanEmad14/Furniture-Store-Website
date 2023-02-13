@@ -1,17 +1,20 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
 }
 
 body {
   padding: 0px;
   margin: 0px;
 }
+
 .container {
   width: 90%;
   margin: auto;
 }
+
 :root {
   --tealColor: #518581;
   --orange: #ffb23f;
@@ -132,12 +135,15 @@ nav .nav-icons .bi {
   color: var(--orange);
   font-weight: 700;
 }
+
 .section-about-us .gray {
   color: var(--gray);
 }
+
 .section-about-us .dark-gray p {
   color: var(--dark-gray);
 }
+
 .section-about-us h1,
 h2,
 h3,
@@ -147,23 +153,28 @@ h6,
 .black {
   color: var(--black);
 }
+
 /* Header start */
 .section-about-us {
   margin-top: 100px;
   line-height: 1.5;
 }
-.section-about-us > header {
+
+.section-about-us>header {
   text-align: center;
 }
-.section-about-us > header p {
+
+.section-about-us>header p {
   width: 42%;
   margin: auto;
 }
+
 .video-about-us {
   width: 100%;
   height: auto;
   margin-top: 50px;
 }
+
 /* Header end */
 
 /* our-mission start*/
@@ -178,22 +189,27 @@ h6,
   align-items: flex-start;
   gap: 170px;
 }
+
 .section-about-us .our-mission .content main h2 {
   width: 80%;
 }
+
 .section-about-us .rate {
   display: flex;
   gap: 50px;
   margin-top: 30px;
 }
+
 .section-about-us .advantage {
   display: flex;
   gap: 30px;
   margin-bottom: 30px;
 }
+
 .section-about-us .advantage h3 {
   margin-bottom: 10px;
 }
+
 .section-about-us .our-mission .icons {
   border-radius: 50%;
   width: 50px;
@@ -203,29 +219,35 @@ h6,
   justify-content: center;
   align-items: center;
 }
+
 .section-about-us .our-mission .icon {
   width: 50px;
   height: auto;
   padding: 15px;
 }
+
 /* our-mission end*/
 
 /* our-team start */
 .section-about-us .our-team {
   margin-top: 120px;
 }
+
 .section-about-us .our-team header {
   margin-bottom: 40px;
 }
+
 .section-about-us .our-team header aside .gray {
   width: 51%;
   margin-left: 370px;
 }
+
 .section-about-us .our-team .content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .section-about-us .our-team .persons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -237,12 +259,14 @@ h6,
   width: 100%;
   margin-bottom: 15px;
 }
+
 .section-about-us .our-team footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
 }
+
 .section-about-us .our-team .talk {
   background-color: var(--tealColor);
   color: white;
@@ -257,12 +281,14 @@ h6,
   align-items: center;
   gap: 10px;
 }
+
 .section-about-us .our-team .talk:hover {
   background-color: white;
   color: var(--tealColor);
   border: 2px solid var(--tealColor);
   cursor: pointer;
 }
+
 /* .section-about-us .our-team hr {
    margin: 10px 35px;
   border: 1px solid rgb(221, 214, 214); 
@@ -291,4 +317,5 @@ footer {
 .hr-footer {
   margin: 10px 60px;
 }
+
 /* About-us end*/

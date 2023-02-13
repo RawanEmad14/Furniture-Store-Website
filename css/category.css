@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: sans-serif;
     background-color: #ffff;
 }
 
@@ -275,6 +275,7 @@ footer {
     .productSection {
         gap: 15px 20px;
     }
+
     /* .secondPart {
         gap: 25px; 
     } */
@@ -282,11 +283,13 @@ footer {
         font-size: 52px;
         margin-bottom: 5px;
     }
+
     h2 {
         font-size: 36px;
         margin-top: 5px;
         margin-bottom: 10px;
     }
+
     h4 {
         font-size: 20px;
         margin: 0px;
@@ -296,6 +299,7 @@ footer {
         margin: 0px;
         font-size: 14px;
     }
+
     footer {
         display: block;
     }
