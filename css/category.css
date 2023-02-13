@@ -209,6 +209,7 @@ nav .nav-icons .bi {
 }
 
 .detailsButton {
+    cursor: pointer;
     padding: 10px 30px;
     color: white;
     background-color: var(--mainColor);
