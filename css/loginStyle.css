@@ -1,7 +1,11 @@
 * {
     font-family: sans-serif;
 }
-
+:root {
+    --mainColor: #518581;
+    --grayColor: #AFADB5;
+    
+}
 .body {
     margin: 0px;
     padding: 0px;
@@ -36,7 +40,7 @@
 }
 
 .submit {
-    background-color: rgb(136, 169, 203);
+    background-color: var(--mainColor);
     width: 200px;
     height: 75px;
     border-radius: 5px;
@@ -47,7 +51,7 @@
 }
 
 .submit:hover {
-    background-color: rgb(191, 189, 203);
+    background-color: var(--grayColor);
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
