@@ -1,0 +1,43 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+}
+.image {
+    width:50%;
+    height: 100%;
+    float: right;
+}
+.login{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.container{
+width: 350px;
+display: flex;
+flex-direction: column;
+}
+.login input{
+    margin: 0px;
+    width: 90%;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-color: black;
+}
+.submit {
+    background-color: rgb(136, 169, 203);
+    width: 200px;
+    height: 75px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.submit:hover {
+    background-color: rgb(191, 189, 203);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
