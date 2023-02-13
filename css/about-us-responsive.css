@@ -111,6 +111,9 @@
   /* our-mission end*/
 
   /* our-team start */
+  .section-about-us .our-team header aside .gray {
+    margin-left: 0;
+  }
   .section-about-us .our-team header aside p {
     width: 51%;
     margin-left: 0;
@@ -132,14 +135,14 @@
   }
   /* our-team end */
 
- footer {
-        display: block;
-    }
+  footer {
+    display: block;
+  }
 
-    .logIn,
-    .signUp {
-        display: block;
-    }
+  .logIn,
+  .signUp {
+    display: block;
+  }
 }
 
 /* About-us end*/
@@ -179,7 +182,7 @@
     color: var(--gray);
   }
   /* nav start */
-  nav{
+  nav {
     margin-left: 20px;
   }
   .caption {
@@ -260,6 +263,9 @@
   /* our-mission end*/
 
   /* our-team start */
+  .section-about-us .our-team header aside .gray {
+    margin-left: 0;
+  }
   .section-about-us .our-team header aside p {
     width: 51%;
     margin-left: 0;
@@ -269,7 +275,7 @@
   }
   .section-about-us .our-team .persons {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .section-about-us .our-team .person {
     margin-bottom: 20px;
@@ -281,16 +287,16 @@
     margin-top: 20px;
   }
   /* our-team end */
-/* footer start */
+  /* footer start */
   footer {
-        display: block;
-    }
+    display: block;
+  }
 
-    .logIn,
-    .signUp {
-        display: block;
-    }
-/* footer end  */
+  .logIn,
+  .signUp {
+    display: block;
+  }
+  /* footer end  */
 }
 
 /* About-us end*/
