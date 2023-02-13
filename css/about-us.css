@@ -114,9 +114,9 @@ nav .nav-icons .bi {
   padding-left: 10px;
 }
 
-hr {
+.hr-header {
   border: 0.2px solid rgb(221, 214, 214);
-  width: 100vw;
+  width: 100%;
 }
 
 .logIn,
@@ -263,13 +263,14 @@ h6,
   border: 2px solid var(--tealColor);
   cursor: pointer;
 }
-.section-about-us .our-team hr {
-  border: 1px solid rgb(221, 214, 214);
-}
+/* .section-about-us .our-team hr {
+   margin: 10px 35px;
+  border: 1px solid rgb(221, 214, 214); 
+} */
 /* our-team end */
 footer {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 40%;
   padding: 50px 40px;
   gap: 0px 60px;
 }
@@ -287,7 +288,7 @@ footer {
   color: var(--footerColor);
 }
 
-.hr {
-  margin: 10px 35px;
+.hr-footer {
+  margin: 10px 60px;
 }
 /* About-us end*/

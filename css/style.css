@@ -416,7 +416,7 @@ aside .article-image .layer {
 /* START footer */
 footer {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 40%;
     padding: 50px 40px;
     gap: 0px 60px;
 }
@@ -447,15 +447,15 @@ footer {
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 34px;
         margin-top: 5px;
         margin-bottom: 10px;
     }
 
-    p {
+    /* p {
         font-size: 16px;
         color: var(--gray);
-    }
+    } */
 
     h3 {
         font-size: 23px;
@@ -484,9 +484,9 @@ footer {
         display: block;
     }
 
-    /* .article-grid {
+    .article-grid {
         grid-template-columns: 1fr;
-    } */
+    }
 }
 
 
@@ -594,11 +594,6 @@ footer {
         padding-left: 10px;
     }
 
-    .review-grid {
-        grid-template-columns: 1fr;
-
-    }
-
     .cust-none {
         display: none;
     }
@@ -614,7 +609,7 @@ footer {
 
     .review-grid {
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: 1fr;
     }
 
 

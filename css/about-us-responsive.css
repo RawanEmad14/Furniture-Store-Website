@@ -1,296 +1,294 @@
-@media screen and (max-width: 768px) {
-  .container {
-    width: 80%;
-    margin: auto;
-  }
-  h1 {
-    font-size: 26px;
-    margin-bottom: 5px;
-  }
-
-  h2 {
-    font-size: 24px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-
-  h3 {
-    font-size: 16px;
-    margin: 0px;
-  }
-
-  h4 {
-    font-size: 16px;
-    margin: 0px;
-  }
-
-  h5 {
-    margin: 0px;
-    font-size: 12px;
-  }
-  p {
-    font-size: 14px;
-    color: var(--gray);
-  }
-  /* nav start */
-  .caption {
-    text-align: center;
-  }
-
-  .caption p {
-    margin: 0px;
-  }
-
-  .search-items .search-icon {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--gray);
-  }
-
-  .search-items .search-button button {
-    padding: 10px 20px;
-    background-color: var(--tealColor);
-  }
-
-  .list {
-    display: block;
-  }
-
-  .ul-items {
-    display: none;
-    width: 100%;
-  }
-
-  nav ul li {
-    width: 100%;
-    text-align: center;
-    padding: 15px 0px;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    padding: 20px 0px;
-  }
-
-  nav .nav-icons {
-    display: none;
-  }
-  .d-flex {
-    display: flex;
-  }
-  .article-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .layer .big-rectangle {
-    width: 90px;
-    height: 40px;
-  }
-
-  .icons {
-    display: none;
-  }
-  /* nav end */
-
-  /* About-us start */
-
-  /* our-mission start*/
-  .section-about-us .our-mission .content {
-    display: block;
-  }
-  .section-about-us .rate {
-    margin-bottom: 30px;
-  }
-  /* our-mission end*/
-
-  /* our-team start */
-  .section-about-us .our-team header aside p {
-    width: 51%;
-    margin-left: 0;
-  }
-  .section-about-us .our-team .content {
-    display: block;
-  }
-  .section-about-us .our-team .persons {
-    display: block;
-  }
-  .section-about-us .our-team .person {
-    margin-bottom: 20px;
-  }
-  .section-about-us .our-team footer {
-    display: block;
-  }
-  .section-about-us .our-team .talk {
-    margin-top: 20px;
-  }
-  /* our-team end */
-
- footer {
-        display: block;
-    }
-
-    .logIn,
-    .signUp {
-        display: block;
-    }
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* About-us end*/
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    width: 80%;
-    margin: auto;
-  }
-  h1 {
-    font-size: 54px;
-    margin-bottom: 5px;
-  }
-
-  h2 {
-    font-size: 38px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-
-  h3 {
-    font-size: 23px;
-    margin: 0px;
-  }
-
-  h4 {
-    font-size: 22px;
-    margin: 0px;
-  }
-
-  h5 {
-    margin: 0px;
-    font-size: 13px;
-  }
-  p {
-    font-size: 16px;
-    color: var(--gray);
-  }
-  /* nav start */
-  nav{
-    margin-left: 20px;
-  }
-  .caption {
-    text-align: center;
-  }
-
-  .caption p {
-    margin: 0px;
-  }
-
-  .search-items .search-icon {
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--gray);
-  }
-
-  .search-items .search-button button {
-    padding: 15px 25px;
-    background-color: var(--tealColor);
-  }
-
-  .list {
-    display: block;
-  }
-
-  .ul-items {
-    display: none;
-    width: 100%;
-  }
-
-  nav ul li {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0px;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    padding: 25px 0px;
-  }
-
-  nav .nav-icons {
-    display: none;
-  }
-  .d-flex {
-    display: flex;
-  }
-  .article-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .layer .big-rectangle {
-    width: 100px;
-    height: 50px;
-  }
-
-  .icons {
-    display: none;
-  }
-  /* nav end */
-
-  /* About-us start */
-
-  /* our-mission start*/
-  .section-about-us .our-mission .content {
-    display: block;
-  }
-  .section-about-us .rate {
-    margin-bottom: 30px;
-  }
-  /* our-mission end*/
-
-  /* our-team start */
-  .section-about-us .our-team header aside p {
-    width: 51%;
-    margin-left: 0;
-  }
-  .section-about-us .our-team .content {
-    display: block;
-  }
-  .section-about-us .our-team .persons {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }
-  .section-about-us .our-team .person {
-    margin-bottom: 20px;
-  }
-  .section-about-us .our-team footer {
-    display: block;
-  }
-  .section-about-us .our-team .talk {
-    margin-top: 20px;
-  }
-  /* our-team end */
-/* footer start */
-  footer {
-        display: block;
-    }
-
-    .logIn,
-    .signUp {
-        display: block;
-    }
-/* footer end  */
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+:root {
+  --tealColor: #518581;
+  --orange: #ffb23f;
+  --arrow: #a6d8d2;
+  --black: #151411;
+  --gray: #afadb5;
+  --dark-gray: #444341;
+  --light-gray: #eee;
+  --footerColor: #151411ae;
 }
 
+h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 44px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: var(--gray);
+}
+
+h3 {
+  font-size: 26px;
+  margin: 0px;
+}
+
+h4 {
+  margin: 0px;
+  font-size: 24px;
+}
+
+h5 {
+  margin: 0px;
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+/* START NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.list {
+  font-size: 35px;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 10px 20px;
+}
+
+nav ul li:hover a {
+  color: var(--tealColor);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav-icons .bi {
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.hr-header {
+  border: 0.2px solid rgb(221, 214, 214);
+  width: 100%;
+}
+
+.logIn,
+.signUp {
+  display: none;
+}
+
+/* END NAV */
+
+/* About-us start */
+
+.section-about-us .orange {
+  color: var(--orange);
+  font-weight: 700;
+}
+.section-about-us .gray {
+  color: var(--gray);
+}
+.section-about-us .dark-gray p {
+  color: var(--dark-gray);
+}
+.section-about-us h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.black {
+  color: var(--black);
+}
+/* Header start */
+.section-about-us {
+  margin-top: 100px;
+  line-height: 1.5;
+}
+.section-about-us > header {
+  text-align: center;
+}
+.section-about-us > header p {
+  width: 42%;
+  margin: auto;
+}
+.video-about-us {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+/* Header end */
+
+/* our-mission start*/
+
+.section-about-us .our-mission {
+  margin-top: 150px;
+}
+
+.section-about-us .our-mission .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 170px;
+}
+.section-about-us .our-mission .content main h2 {
+  width: 80%;
+}
+.section-about-us .rate {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+}
+.section-about-us .advantage {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.section-about-us .advantage h3 {
+  margin-bottom: 10px;
+}
+.section-about-us .our-mission .icons {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-about-us .our-mission .icon {
+  width: 50px;
+  height: auto;
+  padding: 15px;
+}
+/* our-mission end*/
+
+/* our-team start */
+.section-about-us .our-team {
+  margin-top: 120px;
+}
+.section-about-us .our-team header {
+  margin-bottom: 40px;
+}
+.section-about-us .our-team header aside p {
+  width: 51%;
+  margin-left: 455px;
+}
+.section-about-us .our-team .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section-about-us .our-team .persons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.our-team .persons img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.section-about-us .our-team footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.section-about-us .our-team .talk {
+  background-color: var(--tealColor);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px 30px;
+  width: 180px;
+  height: 40px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.talk:hover {
+  /* background-color: white; */
+  color: var(--tealColor);
+  border: 2px solid var(--tealColor);
+  cursor: pointer;
+}
+/* .section-about-us .our-team hr {
+   margin: 10px 35px;
+  border: 1px solid rgb(221, 214, 214); 
+} */
+/* our-team end */
+footer {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  padding: 50px 40px;
+  gap: 0px 60px;
+}
+
+.secondPart {
+  display: flex;
+  gap: 90px;
+}
+
+.Details {
+  color: var(--footerColor);
+}
+
+.firstPart p {
+  color: var(--footerColor);
+}
+
+.hr-footer {
+  margin: 10px 60px;
+}
 /* About-us end*/

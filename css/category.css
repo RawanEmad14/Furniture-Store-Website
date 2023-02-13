@@ -104,8 +104,9 @@ nav .nav-icons .bi {
     padding-left: 10px;
 }
 
-hr {
+.hr-nav {
     border: 0.2px solid rgb(221, 214, 214);
+    width: 100%;
 }
 
 .toggleIcon {
@@ -137,7 +138,7 @@ hr {
 
 .Image img {
     background-size: cover;
-    width: 100vw;
+    width: 100%;
 }
 
 /* END firstSection */
