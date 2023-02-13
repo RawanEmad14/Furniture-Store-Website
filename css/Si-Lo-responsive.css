@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+  }
+  body {
+    position: relative;
+    background-image: url(../images/furniture.png);
+  }
+  .image {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+  }
+  body {
+    position: relative;
+    background-image: url(../images/furniture.png);
+  }
+  .image {
+    display: none;
+  }
+}
