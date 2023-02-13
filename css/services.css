@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,37 +9,135 @@
 }
 
 :root{
+    --headerscolor:#151411;
+    --pcolor: #AFADB5;
     --maincolor:#518581;
-    --yellow:#ffb23f;
-    --white:white;
-    --black:black;
-    --grey:#afadb5;
-    --lightgrey:#f3f3f3;
-    --lgrey:#d0cecb;
+    --yellow:#FFB23F;
+    --white:#FFFFFF;
+    --linecolor:#F3F3F3;
 }
 
-/* FIRSTSECTION */
+h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+}
 
+h2{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+}
+
+h5{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 130%;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+}
+
+/* START NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 10px 20px;
+
+}
+
+nav ul li:hover a {
+    color: var(--mainColor);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.logo {
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+nav .nav_icons .bi {
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+hr {
+    border: 0.2px solid rgb(221, 214, 214);
+}
+
+.toggleIcon {
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    display: none;
+}
+
+.logIn , .signUp{
+    display: none;
+}
+
+/* END NAV */
+/* FIRSTSECTION */
+.firstsection{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    padding: 100px;
+    padding-bottom: 50px;
+    gap: 20px;
+}
 .firstsection h1{
-    color: var(--black);
-    font-size: 80px;
-    text-align: center;
-    padding: 50px 50px 10px;
+    text-align: center;    
+    color:var(--headerscolor) ;
 }
 
 .firstsection p{
-    color: var(--grey);
-    font-size: 30px;
-    text-align: center;
-    padding:30px;
+    /* width: 505px;  */
+    color: var(--pcolor);
 }
 .firstsection img{
     width: 100%;
-    padding: 2% 5.5%;
+    padding-top: 30px;
 }
 .hr{
-    border: 1px solid var(--lightgrey);
-    margin:0px 5.5%;
+    border: 1px solid var(--linecolor);
+    margin: 0% 100px;
 }
 
 /* SECOND SECTION */
@@ -45,55 +145,48 @@
 .secondsection{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    padding: 5.5%;
-    gap: 50px;
+    padding: 100px;
+    padding-top: 50px;
+    gap: 58px;
 }
 .secondsection div h1{
     color: var(--maincolor);
-    font-size: 65px;
-    padding-bottom: 5%;
+    padding-bottom: 26px;
 }
-.secondsection div .label{
-    color: var(--black);
-    font-size: 28px;
+.secondsection div h6{
+    color: var(--headerscolor);
 }
-.secondsection div .par{
-    color: var(--grey);
-    font-size: 22px;
-    padding-top: 2.5%;
-    line-height: 35px;
+.secondsection div p{
+    color: var(--pcolor);
+    padding-top:6px ;
 }
 
 /* THIRD SECTION */
-
+.thirdsection{
+    padding-left: 60px;
+    padding-right: 60px;
+}
 .portfolio{
     color: var(--yellow);
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 5.5%;
+    font-weight: 700;
+    /* padding-left: 100px; */
 }
 .header{
     display: flex;
     justify-content: space-between;
-    padding:1%  5.5%;
+    /* padding:1%  100px; */
     gap: 150px;
 }
 .firstpart {
-    color: var(--black);
-    font-size: 50px;
-    font-weight: bold;
+    color: var(--headerscolor);
 }
 .secondpart p:nth-child(1){
-    color: var(--grey);
-    font-size: 20px;
-    line-height: 35px;
-
+    color: var(--pcolor);
 }
 .secondpart p:nth-child(2){
     color: var(--maincolor);
-    font-weight: bold;
-    font-size: 20px;
     padding-top: 2.5%;
+    font-weight: 700;
 }
 .secondpart p:nth-child(2):hover{
     cursor: pointer;
@@ -103,7 +196,7 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: repeat(2,1fr);
-    padding: 2.5% 5.5%;
+    /* padding: 2.5% 100px; */
     gap: 30px;    
 }
  .firstphoto{
@@ -134,41 +227,37 @@
     bottom:100px;
     color: var(--white);
     padding: 5.5%;
-    font-size: 30px;
-    font-weight: bold;
 }
 .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
     position: absolute;
-    bottom:60px;
+    bottom:50px;
     padding: 5.5%;
-    color: var(--lgrey);
-    font-size:18px;
-    
+    font-size: 16px;
+    color: var(--white);
+    opacity: 0.7;
 }
 .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
     position: absolute;
     bottom:0px;
     padding: 5.5%;
     color: var(--white);
-    font-size: 25px;
-    
 }
 .firstphoto .rd:hover , .secondphoto .rd:hover , .thirdphoto .rd:hover{
     cursor: pointer;
     color:var(--maincolor);
 }
-.thirdsectionfooter{
+/* .thirdsectionfooter{
     padding: 6.5% 5.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-}
-.thirdsectionfooter .interest{
+} */
+/* .thirdsectionfooter .interest{
     font-size: 50px;
     font-weight: bold;
-}
-.talkbutton{
+} */
+/* .talkbutton{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -195,21 +284,47 @@
     fill: var(--white);
     width: 35px;
     height: 35px;
-}
-@media (min-width:1291px) and (max-width:1600px) {
+} */
+.talk {
+    background-color: var(--maincolor);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 30px;
+    width: 180px;
+    height: 40px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .thirdsectionfooter {
+      display: flex;
+      justify-content: space-between;
+      padding: 150px 0px 86px;
+
+  }
+  .talk:hover{
+    background-color: var(--white);
+    color: var(--maincolor);
+    border: 1px solid var(--maincolor);
+    cursor: pointer;
+  }
+/* @media (min-width:1291px) and (max-width:1600px) {
     .firstsection p{
         padding:0px 240px;
     }
-}
+} */
 @media screen and (max-width:1290px){
     .firstphoto .st , .secondphoto .st , .thirdphoto .st{
-        bottom: 85px;
-        font-size: 28px;
+        bottom: 65px;
+        font-size: 18px;
 
     }
     .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
         bottom:35px;
-        font-size: 18px;
+        font-size: 12px;
 
     }
     .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
@@ -219,6 +334,10 @@
     }
 }
 @media screen and (max-width:1170px) {
+    .firstsection , .secondsection , .thirdsection{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
     .firstphoto .st , .secondphoto .st , .thirdphoto .st{
         bottom: 60px;
         font-size: 25px;
@@ -248,8 +367,14 @@
         font-size: 18px;
     }
 }
-
+@media screen and (max-width:1086px) {
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+        bottom:20px;
+        font-size: 12.5px;
+    }
+}
 @media screen and (max-width:1024px) {
+
     .thirdsection .header .firstpart p{
         font-size: 35px;
     }
@@ -264,9 +389,7 @@
     .header{
         gap: 20px;
     }
-    .thirdsection .header .firstpart p{
-        font-size: 30px;
-    }
+    
     .photocards{
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(1,1fr);
@@ -279,49 +402,118 @@
     }
     .firstphoto .st , .secondphoto .st , .thirdphoto .st{
         bottom:100px;
-        font-size: 50px;
+        font-size: 30px;
     }
+    
+    
     .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
         bottom:60px;
         font-size: 25px;
     }
     .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
         bottom: -10px;
-        font-size: 25px;
+        font-size: 30px;
     }
     .firstphoto{
         grid-row: 1/2;
     }
 }
 @media screen and (max-width:870px) {
+    
+h1{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 130%;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+}
+
+h5{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 130%;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+}
+
     .thirdsection .header .firstpart p{
-        font-size: 30px;
     }
     .firstsection h1{
         font-size: 60px;
         padding-bottom: 10px;
     }
     .firstsection p{
-        font-size: 30px;
+        text-align: center;
     }
     .firstphoto .st , .secondphoto .st , .thirdphoto .st{
         bottom:100px;
-        font-size: 40px;
     }
     .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
         bottom:60px;
-        font-size: 20px;
 
     }
     .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
         bottom: -10px;
-        font-size: 25px;
     }
     .thirdsectionfooter{
         flex-direction: column;
         gap: 30px;
         align-items: flex-start;
     }
+}
+@media screen and (max-width:768px) {
+    .toggleIcon {
+        display: block;
+    }
+
+    .logo {
+        padding: 5px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ul_items {
+        display: none;
+        transition: 0.3s;
+        width: 100vw;
+    }
+    nav a {
+        background: none;
+    }
+    .ul_items ul{
+        flex-direction: column;
+        margin-right: 50px;
+        padding: 20px , 0;
+        text-align: center;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0px;
+    }
+    nav .nav_icons {
+        display: none;
+    }
+    .logIn , .signUp{
+        display: block;
+    }
+    
 }
 @media screen and (max-width:727px) {
     .firstphoto .st , .secondphoto .st , .thirdphoto .st{
@@ -375,6 +567,7 @@
         font-size: 23px;
     }
 }
+
 @media screen and (max-width:512px) {
     .interest p{
         font-size: 40px;
