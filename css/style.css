@@ -144,6 +144,12 @@ hr {
     margin-bottom: 15x;
 }
 
+#home p {
+    width: 50%;
+    transform: translate(50%);
+}
+
+
 .home-image {
     background-image: url(../images/Rectangle\ 2.png);
     background-size: 100% 100%;
