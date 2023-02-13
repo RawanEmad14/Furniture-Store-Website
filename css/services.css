@@ -1,987 +1,595 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: 'Fredoka One', 'cursive';
+  font-family: 'Poppins', sans-serif;
 }
 
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
 :root {
-    --headerscolor: #151411;
-    --pcolor: #AFADB5;
-    --maincolor: #518581;
-    --yellow: #FFB23F;
-    --white: #FFFFFF;
-    --linecolor: #F3F3F3;
+  --tealColor: #518581;
+  --orange: #ffb23f;
+  --arrow: #a6d8d2;
+  --black: #151411;
+  --gray: #afadb5;
+  --dark-gray: #444341;
+  --light-gray: #eee;
+  --footerColor: #151411ae;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 130%;
+  font-size: 64px;
+  margin-bottom: 10px;
 }
 
 h2 {
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 130%;
-}
-
-h5 {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 130%;
-}
-
-h6 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 130%;
+  font-size: 44px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 p {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 180%;
+  font-size: 18px;
+  color: var(--gray);
+}
+
+h3 {
+  font-size: 26px;
+  margin: 0px;
+}
+
+h4 {
+  margin: 0px;
+  font-size: 24px;
+}
+
+h5 {
+  margin: 0px;
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 /* START NAV */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.list {
+  font-size: 35px;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  display: none;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul li {
-    padding: 10px 20px;
-
+  padding: 10px 20px;
 }
 
 nav ul li:hover a {
-    color: var(--mainColor);
+  color: var(--tealColor);
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: black;
-    transition: 0.5s;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
 }
 
 .logo {
-    padding-left: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav .nav_icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 50px;
+nav .nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav .nav_icons .bi {
-    font-size: 25px;
-    padding-left: 10px;
+nav .nav-icons .bi {
+  font-size: 25px;
+  padding-left: 10px;
 }
 
-hr {
-    border: 0.2px solid rgb(221, 214, 214);
-}
-
-.toggleIcon {
-    font-size: 35px;
-    position: absolute;
-    top: 10px;
-    right: 40px;
-    display: none;
+.hr-header {
+  border: 0.2px solid rgb(221, 214, 214);
+  width: 100%;
 }
 
 .logIn,
 .signUp {
-    display: none;
+  display: none;
 }
 
 /* END NAV */
-/* FIRSTSECTION */
+/* FIRST-SECTION start */
 .firstsection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
-    padding-bottom: 50px;
-    gap: 20px;
+  margin-top: 100px;
 }
-
 .firstsection h1 {
-    text-align: center;
-    color: var(--headerscolor);
+  color: var(--black);
+  text-align: center;
 }
 
 .firstsection p {
-    /* width: 505px;  */
-    color: var(--pcolor);
+  text-align: center;
 }
-
 .firstsection img {
-    width: 100%;
-    padding-top: 30px;
+  width: 100%;
+  margin-top: 50px;
 }
-
 .hr {
-    border: 1px solid var(--linecolor);
-    margin: 0% 100px;
+  border: 1px solid var(--light-gray);
+  margin-top: 50px;
 }
-
-/* SECOND SECTION */
+/* FIRST-SECTION end */
+/* SECOND-SECTION start */
 
 .secondsection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 100px;
-    padding-top: 50px;
-    gap: 58px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  gap: 50px;
 }
-
 .secondsection div h1 {
-    color: var(--maincolor);
-    padding-bottom: 26px;
+  color: var(--tealColor);
 }
-
-.secondsection div h6 {
-    color: var(--headerscolor);
+.secondsection div .label {
+  color: var(--black);
 }
-
-.secondsection div p {
-    color: var(--pcolor);
-    padding-top: 6px;
+.secondsection div .par {
+  color: var(--gray);
+  line-height: 1.5;
 }
-
-/* THIRD SECTION */
-.thirdsection {
-    padding-left: 60px;
-    padding-right: 60px;
-}
+/* SECOND-SECTION end*/
+/* THIRD-SECTION start */
 
 .portfolio {
-    color: var(--yellow);
-    font-weight: 700;
-    /* padding-left: 100px; */
+  color: var(--orange);
+  font-weight: bold;
+  margin-top: 200px;
+  margin-bottom: 0;
 }
-
 .header {
-    display: flex;
-    justify-content: space-between;
-    /* padding:1%  100px; */
-    gap: 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-bottom: 50px;
 }
-
 .firstpart {
-    color: var(--headerscolor);
+  color: var(--black);
+  font-weight: bold;
+  width: 550px;
 }
-
 .secondpart p:nth-child(1) {
-    color: var(--pcolor);
+  line-height: 1.5;
+  width: 450px;
 }
-
 .secondpart p:nth-child(2) {
-    color: var(--maincolor);
-    padding-top: 2.5%;
-    font-weight: 700;
+  color: var(--tealColor);
+  font-weight: bold;
+  padding-top: 2.5%;
 }
-
 .secondpart p:nth-child(2):hover {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
-
 .photocards {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: repeat(2, 1fr);
-    /* padding: 2.5% 100px; */
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
 }
 
 .firstphoto {
-    grid-row: 1/3;
+  grid-row: 1/3;
 }
-
 .secondpic2,
 .thirdpic2 {
-    display: none;
+  display: none;
 }
-
 .firstphoto img {
-    width: 100%;
-    height: 100%;
-
+  width: 100%;
+  height: 100%;
 }
-
 .secondphoto img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
 .thirdphoto img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .firstphoto,
 .secondphoto,
 .thirdphoto {
-    position: relative;
+  position: relative;
 }
-
 .firstphoto .st,
 .secondphoto .st,
 .thirdphoto .st {
-    position: absolute;
-    bottom: 100px;
-    color: var(--white);
-    padding: 5.5%;
+  position: absolute;
+  bottom: 100px;
+  color: white;
+  padding: 5.5%;
+  font-weight: bold;
 }
-
 .firstphoto .nd,
 .secondphoto .nd,
 .thirdphoto .nd {
-    position: absolute;
-    bottom: 50px;
-    padding: 5.5%;
-    font-size: 16px;
-    color: var(--white);
-    opacity: 0.7;
-}
+  position: absolute;
+  bottom: 60px;
+  padding: 5.5%;
+  color: #ffffff;
 
+  opacity: 0.7;
+}
 .firstphoto .rd,
 .secondphoto .rd,
 .thirdphoto .rd {
-    position: absolute;
-    bottom: 0px;
-    padding: 5.5%;
-    color: var(--white);
+  position: absolute;
+  bottom: 0px;
+  padding: 5.5%;
+  color: white;
 }
-
 .firstphoto .rd:hover,
 .secondphoto .rd:hover,
 .thirdphoto .rd:hover {
-    cursor: pointer;
-    color: var(--maincolor);
+  cursor: pointer;
+  color: var(--tealColor);
 }
-
-/* .thirdsectionfooter{
-    padding: 6.5% 5.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-} */
-/* .thirdsectionfooter .interest{
-    font-size: 50px;
-    font-weight: bold;
-} */
-/* .talkbutton{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: var(--maincolor);
-    padding: 15px 25px;
-}
-.talkbutton:hover{
-    border: 2px solid var(--maincolor);
-    background-color: var(--white);
-    cursor: pointer;
-}
-.talkbutton:hover p{
-    color:var(--maincolor);
-
-}
-.talkbutton:hover .arrow{
-    fill:var(--maincolor);
-}
-.talkbutton p{
-    color: var(--white);
-    font-size: 25px;
-}
-.arrow{
-    fill: var(--white);
-    width: 35px;
-    height: 35px;
-} */
-.talk {
-    background-color: var(--maincolor);
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 15px 30px;
-    width: 180px;
-    height: 40px;
-    border: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
 .thirdsectionfooter {
-    display: flex;
-    justify-content: space-between;
-    padding: 150px 0px 86px;
-
+  padding: 6.5% 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.thirdsectionfooter .interest {
+  font-weight: bold;
+}
+.talkbutton {
+  background-color: var(--tealColor);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px 30px;
+  width: 180px;
+  height: 40px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.talkbutton:hover {
+  background-color: white;
+  color: var(--tealColor);
+  border: 2px solid var(--tealColor);
+  cursor: pointer;
+}
+/* THIRD-SECTION end*/
+/* start footer */
+footer {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  padding: 50px 40px;
+  gap: 0px 60px;
 }
 
-.talk:hover {
-    background-color: var(--white);
-    color: var(--maincolor);
-    border: 1px solid var(--maincolor);
-    cursor: pointer;
+.secondPart {
+  display: flex;
+  gap: 90px;
 }
 
-/* @media (min-width:1291px) and (max-width:1600px) {
-    .firstsection p{
-        padding:0px 240px;
-    }
-} */
-@media screen and (max-width:1290px) {
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 65px;
-        font-size: 18px;
-
-    }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 35px;
-        font-size: 12px;
-
-    }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: -10px;
-        font-size: 24px;
-
-    }
+.Details {
+  color: var(--footerColor);
 }
 
-@media screen and (max-width:1170px) {
-
-    .firstsection,
-    .secondsection,
-    .thirdsection {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 60px;
-        font-size: 25px;
-    }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 35px;
-        font-size: 13px;
-
-    }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: -10px;
-        font-size: 20px;
-    }
+.firstPart p {
+  color: var(--footerColor);
 }
 
-@media screen and (max-width:1118px) {
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 60px;
-        font-size: 23px;
-    }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 30px;
-        font-size: 12.5px;
-
-    }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: -10px;
-        font-size: 18px;
-    }
+.hr-footer {
+  margin: 10px 60px;
 }
+/* end footer */
 
-@media screen and (max-width:1086px) {
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 20px;
-        font-size: 12.5px;
+@media screen and (max-width: 768px) {
+    .container {
+      width: 80%;
+      margin: auto;
     }
-}
-
-@media screen and (max-width:1024px) {
-
-    .thirdsection .header .firstpart p {
-        font-size: 35px;
-    }
-
-    .header {
-        gap: 20px;
-    }
-}
-
-@media screen and (max-width:976px) {
-    .secondsection {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .header {
-        gap: 20px;
-    }
-
-    .photocards {
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .secondpic1,
-    .thirdpic1 {
-        display: none;
-    }
-
-    .secondpic2,
-    .thirdpic2 {
-        display: block;
-    }
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 100px;
-        font-size: 30px;
-    }
-
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 60px;
-        font-size: 25px;
-    }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: -10px;
-        font-size: 30px;
-    }
-
-    .firstphoto {
-        grid-row: 1/2;
-    }
-}
-
-@media screen and (max-width:870px) {
-
     h1 {
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 130%;
+      font-size: 26px;
+      margin-bottom: 5px;
     }
-
+  
     h2 {
-        font-weight: 700;
-        font-size: 44px;
-        line-height: 130%;
+      font-size: 24px;
+      margin-top: 5px;
+      margin-bottom: 10px;
     }
-
+  
+    h3 {
+      font-size: 16px;
+      margin: 0px;
+    }
+  
+    h4 {
+      font-size: 16px;
+      margin: 0px;
+    }
+  
     h5 {
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 130%;
+      margin: 0px;
+      font-size: 12px;
     }
-
-    h6 {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 130%;
-    }
-
     p {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 180%;
+      font-size: 14px;
+      color: var(--gray);
     }
-
-    .thirdsection .header .firstpart p {}
-
-    .firstsection h1 {
-        font-size: 60px;
-        padding-bottom: 10px;
+    /* nav start */
+    .caption {
+      text-align: center;
     }
-
-    .firstsection p {
-        text-align: center;
+  
+    .caption p {
+      margin: 0px;
     }
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 100px;
+  
+    .search-items .search-icon {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--gray);
     }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 60px;
-
+  
+    .search-items .search-button button {
+      padding: 10px 20px;
+      background-color: var(--tealColor);
     }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: -10px;
+  
+    .list {
+      display: block;
     }
-
-    .thirdsectionfooter {
-        flex-direction: column;
-        gap: 30px;
-        align-items: flex-start;
+  
+    .ul-items {
+      display: none;
+      width: 100%;
     }
-}
-
-@media screen and (max-width:768px) {
-    .toggleIcon {
-        display: block;
-    }
-
-    .logo {
-        padding: 5px 20px;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .ul_items {
-        display: none;
-        transition: 0.3s;
-        width: 100vw;
-    }
-
-    nav a {
-        background: none;
-    }
-
-    .ul_items ul {
-        flex-direction: column;
-        margin-right: 50px;
-        padding: 20px, 0;
-        text-align: center;
-    }
-
+  
     nav ul li {
-        width: 100%;
-        text-align: center;
-        padding: 15px 0px;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0px;
     }
-
-    nav .nav_icons {
-        display: none;
+  
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
     }
-
+  
+    nav ul {
+      flex-direction: column;
+      padding: 20px 0px;
+    }
+  
+    nav .nav-icons {
+      display: none;
+    }
+    .d-flex {
+      display: flex;
+    }
+    .article-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .layer .big-rectangle {
+      width: 90px;
+      height: 40px;
+    }
+  
+    .icons {
+      display: none;
+    }
+    /* nav end */
+  
+    footer {
+      display: block;
+    }
+  
     .logIn,
     .signUp {
-        display: block;
+      display: block;
     }
-
-}
-
-@media screen and (max-width:727px) {
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 100px;
-        font-size: 30px;
-    }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 60px;
-        font-size: 17px;
-
-    }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: -10px;
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width:686px) {
-    .secondsection {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .header {
+    .header{
         flex-direction: column;
-        gap: 10px;
+        gap: 0px;
     }
-
-    .portfolio {
-        padding-top: 150px;
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+      bottom:80px;
     }
-
-    .thirdsectionfooter {
-        flex-direction: column;
-        gap: 30px;
-        align-items: flex-start;
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+      bottom:15px;
+    } 
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+      bottom: -10px;
     }
-
-}
-
-@media screen and (max-width:590px) {
-    .firstpart {
-        font-size: 40px;
+    .secondsection{
+      grid-template-columns: repeat(1,1fr);
     }
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 100px;
-        font-size: 35px;
+    .photocards{
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(1,1fr);
+  }
+  .secondpic1 , .thirdpic1{
+      display: none;
+  }
+  .secondpic2,.thirdpic2{
+      display: block;
+  }
+  .firstphoto{
+    grid-row: 1/2;
+  }
+  .secondpart p:nth-child(1){
+    width: fit-content;
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      width: 80%;
+      margin: auto;
     }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 45px;
-        font-size: 18px;
-
+    h1 {
+      font-size: 54px;
+      margin-bottom: 5px;
     }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: -10px;
-        font-size: 23px;
+  
+    h2 {
+      font-size: 38px;
+      margin-top: 5px;
+      margin-bottom: 10px;
     }
-}
-
-@media screen and (max-width:512px) {
-    .interest p {
-        font-size: 40px;
+  
+    h3 {
+      font-size: 23px;
+      margin: 0px;
     }
-
-}
-
-@media screen and (max-width:450px) {
-    .firstsection p {
-        font-size: 25px;
+  
+    h4 {
+      font-size: 22px;
+      margin: 0px;
     }
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 100px;
-        font-size: 30px;
+  
+    h5 {
+      margin: 0px;
+      font-size: 13px;
     }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 45px;
-        font-size: 15px;
-
+    p {
+      font-size: 16px;
+      color: var(--gray);
     }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: -10px;
-        font-size: 20px;
+    /* nav start */
+    nav {
+      margin-left: 20px;
     }
-}
-
-@media screen and (max-width:366px) {
-    .firstsection h1 {
-        font-size: 50px;
+    .caption {
+      text-align: center;
     }
-
-    .firstsection p {
-        font-size: 20px;
+  
+    .caption p {
+      margin: 0px;
     }
-
-    .secondsection div h1 {
-        font-size: 50px;
+  
+    .search-items .search-icon {
+      font-size: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--gray);
     }
-
-    .secondsection div .label {
-        font-size: 23px;
+  
+    .search-items .search-button button {
+      padding: 15px 25px;
+      background-color: var(--tealColor);
     }
-
-    .secondsection div .par {
-        font-size: 18px;
+  
+    .list {
+      display: block;
     }
-
-    .firstpart {
-        font-size: 33.5px;
+  
+    .ul-items {
+      display: none;
+      width: 100%;
     }
-
-    .secondpart p:nth-child(1) {
-        font-size: 18px;
+  
+    nav ul li {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0px;
     }
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 80px;
-        font-size: 30px;
+  
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
     }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 35px;
-        font-size: 18px;
-
+  
+    nav ul {
+      flex-direction: column;
+      padding: 25px 0px;
     }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: 0px;
-        font-size: 20px;
+  
+    nav .nav-icons {
+      display: none;
     }
-
-    .interest p {
-        font-size: 25px;
+    .d-flex {
+      display: flex;
     }
-
-    .talkbutton {
-        padding: 7px;
+    .article-grid {
+      grid-template-columns: 1fr;
     }
-}
-
-@media screen and (max-width:330px) {
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 70px;
-        font-size: 20px;
+  
+    .layer .big-rectangle {
+      width: 100px;
+      height: 50px;
     }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 30px;
-        font-size: 13px;
-
+  
+    .icons {
+      display: none;
     }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: -10px;
-        font-size: 17px;
+    /* nav end */
+    .header{
+        gap: 50px;
     }
-}
-
-@media screen and (max-width:287px) {
-    .firstsection h1 {
-        font-size: 40px;
-        padding: 0px 3px;
-        padding-top: 35px;
+    .firstphoto .st , .secondphoto .st , .thirdphoto .st{
+      bottom:70px;
     }
-
-    .firstsection p {
-        font-size: 15px;
-        padding: 0px 3px;
+    .firstphoto .nd , .secondphoto .nd , .thirdphoto .nd{
+      bottom:7px;
+    } 
+    .firstphoto .rd , .secondphoto .rd , .thirdphoto .rd{
+      bottom: -25px;
     }
-
-    .secondsection div h1 {
-        font-size: 45px;
+    .secondpart p:nth-child(1){
+      width: fit-content;
     }
-
-    .secondsection div .label {
-        white-space: nowrap;
+  
+    /* footer start */
+    footer {
+      display: block;
     }
-
-    .secondsection div .par {
-        line-height: 20px;
-        font-size: 15px;
+  
+    .logIn,
+    .signUp {
+      display: block;
     }
-
-    .firstpart {
-        font-size: 18px;
-        line-height: 25px;
-    }
-
-    .secondpart p:nth-child(1) {
-        line-height: 20px;
-        font-size: 12px;
-    }
-
-    .portfolio,
-    .secondpart p:nth-child(2) {
-        font-size: 13px;
-    }
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 80px;
-        font-size: 17.5px;
-    }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 35px;
-        font-size: 13px;
-
-    }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: 0px;
-        font-size: 14px;
-    }
-
-    .interest p {
-        font-size: 20px;
-    }
-
-    .talkbutton {
-        padding: 7px;
-    }
-}
-
-@media screen and (max-width:237px) {
-    .secondsection div .label {
-        font-size: 20px;
-    }
-
-    .secondsection div .par {
-        line-height: 20px;
-        font-size: 15px;
-    }
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 65px;
-        font-size: 15px;
-        line-height: 20px;
-    }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 35px;
-        font-size: 10px;
-
-    }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: 0px;
-        font-size: 14px;
-    }
-
-    .talkbutton p {
-        white-space: nowrap;
-    }
-}
-
-@media screen and (max-width:206px) {
-    .firstsection h1 {
-        font-size: 35px;
-        padding: 0px 3px;
-        padding-top: 35px;
-    }
-
-    .firstsection p {
-        font-size: 13px;
-        padding: 0px 3px;
-    }
-
-    .secondsection div h1 {
-        font-size: 40px;
-    }
-
-    .secondsection div .label {
-        font-size: 18px;
-    }
-
-    .secondsection div .par {
-        line-height: 20px;
-        font-size: 13px;
-    }
-
-    .firstphoto .st,
-    .secondphoto .st,
-    .thirdphoto .st {
-        bottom: 60px;
-        font-size: 13px;
-    }
-
-    .firstphoto .nd,
-    .secondphoto .nd,
-    .thirdphoto .nd {
-        bottom: 25px;
-        font-size: 10px;
-
-    }
-
-    .firstphoto .rd,
-    .secondphoto .rd,
-    .thirdphoto .rd {
-        bottom: 0px;
-        font-size: 12px;
-    }
-
-    .interest p {
-        font-size: 17px;
-    }
-
-    .talkbutton p {
-        font-size: 18px;
-    }
-}
+    /* footer end  */
+  }
