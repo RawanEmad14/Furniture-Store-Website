@@ -1,7 +1,17 @@
 * {
     font-family: sans-serif;
 }
-
+:root {
+    --tealColor: #518581;
+  --orange: #ffb23f;
+  --arrow: #a6d8d2;
+  --black: #151411;
+  --gray: #afadb5;
+  --dark-gray: #444341;
+  --light-gray: #eee;
+  --footerColor: #151411ae;
+    
+}
 .body {
     margin: 0px;
     padding: 0px;
@@ -34,9 +44,14 @@
     border-radius: 5px;
     border-color: black;
 }
+h1{
+    color: var(--orange);
+}
 
 .submit {
-    background-color: rgb(136, 169, 203);
+    background-color: var(--tealColor);
+    border-color: var(--tealColor);
+    color: white;
     width: 200px;
     height: 75px;
     border-radius: 5px;
@@ -47,7 +62,9 @@
 }
 
 .submit:hover {
-    background-color: rgb(191, 189, 203);
+    background-color: white;
+    border-color: var(--tealColor);
+    color: var(--tealColor);
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }

@@ -25,13 +25,13 @@
                     <li><a href="category.html">Categories</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about-us.html">About us</a></li>
-                    <li class="logIn"><a href="#">Login</a></li>
-                    <li class="signUp"><a href="#">Signup</a></li>
+                    <li class="logIn"><a href="login.html">Login</a></li>
+                    <li class="signUp"><a href="signup.html">Signup</a></li>
                 </ul>
             </div>
             <div class="nav-icons">
-                <i class="bi bi-person-check"></i>
-                <i class="bi bi-person-add"></i>
+                <i class="bi bi-person-check" onclick="window.open('login.html')"></i>
+                <i class="bi bi-person-add" onclick="window.open('signup.html')"></i>
             </div>
             <div class="toggleIcon">
                 <i class="bi bi-list"></i>
@@ -232,12 +232,6 @@
 
         document.getElementById("Total").style.borderBottomStyle = "solid";
 
-        // document.getElementById("ChairCategory").style.borderBottomStyle = "none";
-        // document.getElementById("ChairCategory").style.borderBottomStyle = "none";
-        // document.getElementById("TableCategory").style.borderBottomStyle = "none";
-        // document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
-        // document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
-
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="inline";
         }
@@ -258,11 +252,6 @@
         }
 
         document.getElementById("ChairCategory").style.borderBottomStyle = "solid";
-
-        // document.getElementById("Total").style.borderBottomStyle = "none";
-        // document.getElementById("TableCategory").style.borderBottomStyle = "none";
-        // document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
-        // document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="inline";
@@ -285,11 +274,6 @@
 
         document.getElementById("TableCategory").style.borderBottomStyle = "solid";
 
-        // document.getElementById("Total").style.borderBottomStyle = "none";
-        // document.getElementById("ChairCategory").style.borderBottomStyle = "none";
-        // document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
-        // document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
-
         for(let i=0;i<chairs.length;i++){
                 chairs[i].style.display="none";
             }
@@ -310,11 +294,6 @@
         }
 
         document.getElementById("CupboardCategory").style.borderBottomStyle = "solid";
-
-        // document.getElementById("Total").style.borderBottomStyle = "none";
-        // document.getElementById("ChairCategory").style.borderBottomStyle = "none";
-        // document.getElementById("TableCategory").style.borderBottomStyle = "none";
-        // document.getElementById("DecorationCategory").style.borderBottomStyle = "none";
 
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="none";
@@ -337,11 +316,6 @@
 
         document.getElementById("DecorationCategory").style.borderBottomStyle = "solid";
 
-        // document.getElementById("Total").style.borderBottomStyle = "none";
-        // document.getElementById("ChairCategory").style.borderBottomStyle = "none";
-        // document.getElementById("TableCategory").style.borderBottomStyle = "none";
-        // document.getElementById("CupboardCategory").style.borderBottomStyle = "none";
-
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="none";
         }
@@ -358,6 +332,12 @@
     function goToDetails(){
             window.location.href = 'product-detail.html';
         }
+    // function goTologin(){
+    //     window.location.href = 'login.html';
+    // }
+    // function goTosignup(){
+    //     window.location.href = 'signup.html';
+    // }
 </script>
 
 </html>
