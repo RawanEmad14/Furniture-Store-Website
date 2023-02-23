@@ -1,70 +1,72 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 * {
-    font-family: sans-serif;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
+
 :root {
-    --tealColor: #518581;
+  --tealColor: #518581;
   --orange: #ffb23f;
   --arrow: #a6d8d2;
   --black: #151411;
   --gray: #afadb5;
   --dark-gray: #444341;
   --light-gray: #eee;
-  --footerColor: #151411ae;
-    
-}
-.body {
-    margin: 0px;
-    padding: 0px;
+  --footerColor: #151411ae;
 }
 
-.image {
-    width: 50%;
-    height: 100%;
-    float: right;
+h2 {
+  font-size: 64px;
+  color: var(--black);
+  margin-bottom: 10px;
 }
-
-.login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 90vh;
+h3 {
+  font-size: 18px;
+  color: var(--black);
+  margin-bottom: 10px;
 }
-
+p {
+  font-size: 18px;
+  color: var(--orange);
+  margin-bottom: 50px;
+}
+body {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 30px;
+}
 .container {
-    width: 350px;
-    display: flex;
-    flex-direction: column;
+  margin-left: 30px;
 }
-
-.login input {
-    margin: 0px;
-    width: 90%;
-    height: 30px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border-color: black;
+.input-fields {
+  width: 400px;
 }
-h1{
-    color: var(--orange);
+.input-fields input {
+  font-size: 15px;
+  height: 20px;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--tealColor);
+  color: var(--gray);
 }
-
-.submit {
-    background-color: var(--tealColor);
-    border-color: var(--tealColor);
-    color: white;
-    width: 200px;
-    height: 75px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
+input[type="submit"] {
+  height: 30px;
+  padding: 5px;
+  width: 413px;
+  margin-bottom: 5px;
+  color: white;
+  background-color: var(--tealColor);
 }
-
-.submit:hover {
-    background-color: white;
-    border-color: var(--tealColor);
-    color: var(--tealColor);
-    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+input[type="submit"]:hover {
+  color: var(--tealColor);
+  background-color: white;
+  transform: 0.5s;
+  cursor: pointer;
 }

@@ -1,99 +1,134 @@
 * {
-    font-family: sans-serif;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 :root {
-    --tealColor: #518581;
+  --tealColor: #518581;
   --orange: #ffb23f;
   --arrow: #a6d8d2;
   --black: #151411;
   --gray: #afadb5;
   --dark-gray: #444341;
   --light-gray: #eee;
-  --footerColor: #151411ae;
-
-    
-}
-.body {
-    margin: 0px;
-    padding: 0px;
+  --footerColor: #151411ae;
 }
 
-.image {
-    width: 50%;
-    height: 100%;
-    float: right;
+h2 {
+  font-size: 64px;
+  color: var(--black);
+  margin-bottom: 10px;
 }
-
-.loginbox {
-    justify-content: space-around;
-    align-content: center;
-    min-height: 90vh;
+h3 {
+  font-size: 16px;
+  color: var(--black);
+  margin-bottom: 10px;
 }
-
+p {
+  font-size: 18px;
+  color: var(--orange);
+  margin-bottom: 50px;
+}
+body {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 30px;
+}
 .container {
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    transform: translate(200px, 0px);
-
+  
+  margin-left: 30px;
+  
+}
+/* start form */
+#fname,
+#lname {
+  width: 44%;
+}
+.name {
+  width: 413px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-fields {
+  width: 400px;
+}
+.phone-block {
+  width: 413px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.code-phone {
+  width: 60px;
+  height: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  border: 2px solid var(--tealColor);
+  border-radius: 5px;
+  color: var(--gray);
+}
+.icon {
+  width: 10px;
+  height: 10px;
+  fill: gray;
+}
+#phone {
+  width: 75%;
+}
+.check {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+#checkbox {
+  width: auto;
+  margin-bottom: 0;
+}
+.checkbox {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--dark-graygray);
+}
+.bottom a:link {
+  color: var(--tealColor);
+}
+.bottom a:hover {
+  color: var(--orange);
+  text-decoration: none;
+}
+.input-fields input {
+  font-size: 15px;
+  height: 20px;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--tealColor);
+  color: var(--gray);
+}
+input[type="submit"] {
+  height: 30px;
+  padding: 5px;
+  width: 413px;
+  margin-bottom: 5px;
+  color: white;
+  background-color: var(--tealColor);
+}
+input[type="submit"]:hover {
+  color: var(--tealColor);
+  background-color: white;
+  transform: 0.5s;
+  cursor: pointer;
 }
 
-.inputfields {
-    flex-direction: column;
-}
-
-.loginbox input {
-
-    margin: 0px;
-    height: 30px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border-color: black;
-}
-
-#name {
-    margin: 10px;
-    width: 50%;
-}
-
-#email,
-#address,
-#password {
-    width: 90%;
-}
-
-h1 {
-    text-align: left;
-    color: var(--orange);
-    
-
-}
-
-.submit {
-    background-color:var(--tealColor);
-    width: 200px;
-    height: 75px;
-    border-radius: 5px;
-    border-color: var(--tealColor);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    transform: translate(70px, 0px);
-}
-
-.submit:hover {
-    background-color: white;
-    border-color: var(--tealColor);
-    color: var(--tealColor);
-    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-.bottom {
-    font-size: 16px;
-}
-a{
-    color: green;
-}
+/* end form */

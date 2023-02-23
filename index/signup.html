@@ -5,35 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Page</title>
-    <link rel="stylesheet" href="../css/SignupStyle.css" />
-    <link rel="stylesheet" href="../css/Si-Lo-responsive.css" />
+    <link rel="stylesheet" href="/css/SignupStyle.css" />
+    <link rel="stylesheet" href="/css/Si-Lo-responsive.css" />
   </head>
 
   <body>
     <div class="image">
-      <img
-        src="../images/furniture.png"
-        alt="picture of furniture and plants" />
+      <img src="/images/furniture.png" alt="picture of furniture and plants" />
     </div>
-    <div class="loginbox">
+    <div class="login">
       <div class="container">
-        <h1>Welcome to Lalasia</h1>
-        <h1>Sign Up</h1>
+        <h3>Welcome to</h3>
+        <h2>Lalasia</h2>
+        <p>Sign Up</p>
         <div class="input-fields">
           <form action="">
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              placeholder="First Name"
-              required />
-            <input
-              type="text"
-              id="lname"
-              name="lname"
-              placeholder="Last Name"
-              required />
-            <br />
+            <div class="name">
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="First Name"
+                required />
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Last Name"
+                required />
+            </div>
             <input
               type="email"
               id="email"
@@ -53,13 +53,24 @@
               placeholder="Confirm Password"
               required />
             <br />
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Phone Number"
-              required />
-            <br />
+            <div class="phone-block">
+              <div class="code-phone">
+                +92
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                  </svg>
+                </div>
+              </div>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+                required />
+            </div>
             <input
               type="text"
               id="address"
@@ -73,6 +84,12 @@
               value="Sign Up"
               onclick="window.open('../index.html')" />
             <br />
+            <div class="check">
+              <input type="checkbox" id="checkbox" name="checkbox" />
+              <label class="checkbox" for="checkbox"
+                >I Agree To Privacy Policy</label
+              >
+            </div>
             <div class="bottom">
               <p>Already Have An Account? <a href="login.html">Log In</a></p>
             </div>

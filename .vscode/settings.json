@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "editor.letterSpacing": 0.5,
+  "terminal.integrated.letterSpacing": 0.5
 }

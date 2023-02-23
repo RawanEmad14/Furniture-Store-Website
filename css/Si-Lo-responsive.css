@@ -1,23 +1,90 @@
 @media screen and (max-width: 768px) {
+  :root {
+    --tealColor: #518581;
+    --orange: #ffb23f;
+    --arrow: #a6d8d2;
+    --black: #151411;
+    --gray: #afadb5;
+    --dark-gray: #444341;
+    --light-gray: #eee;
+    --footerColor: #151411ae;
+  }
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  .container {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 100px;
+  h2 {
+    font-size: 44px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .name {
+    width: 100%;
+    gap: 10px;
+  }
+  #fname,
+  #lname {
+    width: 50%;
+  }
+  h3 {
+    font-size: 22px;
+    margin: 0px;
+  }
+  p {
+    font-size: 24px;
+    color: var(--orange);
   }
   body {
-    position: relative;
-    background-image: url(../images/furniture.png);
+    height: 100vh;
+    background-image: url(/images/furniture-blur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 30px auto;
+  }
+  .container {
+    width: 90vw;
+  }
+  .login {
+    margin: 100px auto;
   }
   .image {
     display: none;
   }
+  .input-fields {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .input-fields input {
+    font-size: 20px;
+    height: 40px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--tealColor);
+    color: var(--gray);
+  }
+  input[type="submit"] {
+    height: 40px;
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 5px;
+    color: white;
+    background-color: var(--tealColor);
+  }
+  .code-phone {
+    height: 100%;
+  }
+  #phone {
+    width: 100%;
+  }
+  .phone-block {
+    width: 100%;
+    gap: 15px;
+  }
+  
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   * {
@@ -25,18 +92,73 @@
     padding: 0;
     box-sizing: border-box;
   }
-  .container {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 100px;
+  h2 {
+    font-size: 44px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin: 0px;
+  }
+  p {
+    font-size: 24px;
+    color: var(--orange);
   }
   body {
-    position: relative;
-    background-image: url(../images/furniture.png);
+    height: 100vh;
+    background-image: url(/images/furniture-blur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 30px auto;
+  }
+  .name {
+    width: 100%;
+    gap: 10px;
+  }
+  #fname,
+  #lname {
+    width: 50%;
+  }
+  .code-phone {
+    height: 100%;
+  }
+  #phone {
+    width: 100%;
+  }
+  .phone-block {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .login {
+    margin: 100px auto;
+    width: 90%;
   }
   .image {
     display: none;
+  }
+  .input-fields {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .input-fields input {
+    font-size: 20px;
+    height: 40px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--tealColor);
+    color: var(--gray);
+  }
+  input[type="submit"] {
+    height: 40px;
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 5px;
+    color: white;
+    background-color: var(--tealColor);
   }
 }
