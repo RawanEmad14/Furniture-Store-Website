@@ -38,7 +38,7 @@
   }
   body {
     height: 100vh;
-    background-image: url(/images/furniture-blur.jpg);
+    background-image: url(../images/furniture-blur.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 30px auto;
@@ -108,7 +108,7 @@
   }
   body {
     height: 100vh;
-    background-image: url(/images/furniture-blur.jpg);
+    background-image: url(../images/furniture-blur.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 30px auto;
