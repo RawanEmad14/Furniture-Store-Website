@@ -40,7 +40,6 @@
         <hr class="hr-nav">
     </header>
     <!-- END NAV -->
-
     <!-- START FIRST SECTION  -->
     <div class="firstSection">
         <div>
@@ -57,7 +56,6 @@
         </div>
     </div>
     <!-- END FIRST SECTION  -->
-
     <!-- START CATEGORY SECTION  -->
     <div class="categorySection">
         <button class="TotalCategory cat" id="Total" onclick="displayTotal();">Total</button>
@@ -67,7 +65,6 @@
         <button class="category DecorationCategory cat" id="DecorationCategory" onclick="displayDecoration();">Decoration</button>
     </div>
     <!-- END CATEGORY SECTION  -->
-
     <!-- START PRODUCTS SECTION  -->
     <main class="productSection">
         <div class="product chair">
@@ -78,7 +75,6 @@
             <h3>$99.98</h3>
             <button class="detailsButton" onclick="goToDetails();">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
-
         <div class="product cupboard">
             <img class="productImage" src="../images/Rectangle 8.png">
             <p>Cupboard</p>
@@ -87,7 +83,6 @@
             <h3>$79.88</h3>
             <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
-
         <div class="product chair">
             <img class="productImage" src="../images/Rectangle 10.png">
             <p>Chair</p>
@@ -96,7 +91,6 @@
             <h3>$14.74</h3>
             <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
-
         <div class="product table">
             <img class="productImage" src="../images/Rectangle 11.png">
             <p>Table</p>
@@ -105,7 +99,6 @@
             <h3>$47.90</h3>
             <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
-
         <div class="product cupboard">
             <img class="productImage" src="../images/Rectangle 12.png">
             <p>Cupboard</p>
@@ -114,7 +107,6 @@
             <h3>$40.73</h3>
             <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
-
         <div class="product table">
             <img class="productImage" src="../images/Rectangle 13.png">
             <p>Table</p>
@@ -123,7 +115,6 @@
             <h3>$16.50</h3>
             <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
-
         <div class="product decoration">
             <img class="productImage" src="../images/Rectangle 14.png">
             <p>Decoration</p>
@@ -132,7 +123,6 @@
             <h3>$58.39</h3>
             <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
-
         <div class="product decoration">
             <img class="productImage" src="../images/Rectangle 15.png">
             <p>Decoration</p>
@@ -141,7 +131,6 @@
             <h3>$61.49</h3>
             <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
-
         <div class="product decoration">
             <img class="productImage" src="../images/Rectangle 16.png">
             <p>Decoration</p>
@@ -150,7 +139,6 @@
             <h3>$32.43</h3>
             <button class="detailsButton">More Details <span><i class="bi bi-arrow-right"></i></span></button>
         </div>
-
         <div class="product decoration">
             <img class="productImage" src="../images/Rectangle 18.png">
             <p>Decoration</p>
@@ -161,9 +149,7 @@
         </div>
     </main>
     <!-- END PRODUCTS SECTION  -->
-
     <hr class="hr">
-
     <!-- START FOOTER SECTION  -->
     <footer>
         <div class="firstPart">
@@ -202,7 +188,6 @@
                 <p class="Details">Twitter</p>
             </div>
         </div>
-
     </footer>
     <!-- END FOOTER SECTION  -->
 
@@ -216,22 +201,16 @@
     toggleIcon.addEventListener('click', function () {
         ul_items.classList.toggle('d_flex');
     });
-
     const chairs=document.querySelectorAll(".chair");
     const cupboards=document.querySelectorAll(".cupboard");
     const tables=document.querySelectorAll(".table");
     const decoration=document.querySelectorAll(".decoration");
-
     const categryList=document.querySelectorAll(".cat");
-
     function displayTotal() {
-
         for(let i=0;i<categryList.length;i++){
         categryList[i].style.borderBottomStyle="none";
         }
-
         document.getElementById("Total").style.borderBottomStyle = "solid";
-
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="inline";
         }
@@ -245,14 +224,11 @@
             decoration[i].style.display="inline";
         }
     }
-
     function displayChairs() {
         for(let i=0;i<categryList.length;i++){
         categryList[i].style.borderBottomStyle="none";
         }
-
         document.getElementById("ChairCategory").style.borderBottomStyle = "solid";
-
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="inline";
         }
@@ -267,13 +243,10 @@
         }
     }
     function displayTables() {
-
         for(let i=0;i<categryList.length;i++){
         categryList[i].style.borderBottomStyle="none";
         }
-
         document.getElementById("TableCategory").style.borderBottomStyle = "solid";
-
         for(let i=0;i<chairs.length;i++){
                 chairs[i].style.display="none";
             }
@@ -288,13 +261,10 @@
             }
     }
     function displayCupboard() {
-
         for(let i=0;i<categryList.length;i++){
         categryList[i].style.borderBottomStyle="none";
         }
-
         document.getElementById("CupboardCategory").style.borderBottomStyle = "solid";
-
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="none";
         }
@@ -309,13 +279,10 @@
         }
     }
     function displayDecoration() {
-
         for(let i=0;i<categryList.length;i++){
         categryList[i].style.borderBottomStyle="none";
         }
-
         document.getElementById("DecorationCategory").style.borderBottomStyle = "solid";
-
         for(let i=0;i<chairs.length;i++){
             chairs[i].style.display="none";
         }
