@@ -1,0 +1,120 @@
+1 - Home Page :
+	=> HTML :
+		+ code is very well structured
+		+ semantic tags are used properly 
+		+ code is well commented
+		- commented code should be removed before pushing the code to github (lines : 65-72)
+	=> CSS :
+		+ using variables in code 
+		+ code is well commented
+		+ using flex - grid to move elements 
+		+ applying reasonable margin - padding to elements
+		+ proper use of the transform property ++ 
+		+ giving classes meaningful and descriptive names
+		+ good responsive view
+		- (in the reviews section) giving a fixed width of 500px to the grid elements is not preferable , better to give it a width of 1fr
+		- (in the reviews section) mobile view is not handled properly in this section 
+		- commented code should be removed before pushing the code to github  
+		
+========================================================================================
+		 
+2 - Categories Page :
+	=> HTML :
+		+ code is very well structured
+		+ semantic tags are used properly
+		+ code is well commented
+	=> CSS :
+		+ using variables in code 
+		+ code is well commented
+		+ using flex to move elements 
+		+ applying reasonable margin - padding to elements
+		+ giving classes meaningful and descriptive names
+		+ good responsive view
+	=> JS :
+		+ writing good code for handling multiple views with javascript ++
+		- functions are redundant and can be reduced to a single function with multiple parameters to handle each case (but overall ok) 
+		
+========================================================================================		
+
+3 - Services Page :
+	=> HTML :
+		+ code is very well structured 
+		+ code is well commented
+		- consider using more semantic tags
+		- don't use a single container to hold all sections
+	=> CSS :
+		+ using variables in code 
+		+ code is well commented
+		+ giving classes meaningful and descriptive names
+		+ applying reasonable margin - padding to elements
+		+ using (flex - grid) to move elements  
+		+ mobile view is excellent ++ best page in mobile view !
+		- (in the portfolio section, header, firstpart) giving fixed width of 550px to this div caused it to overflow out of it's parent, don't give fixed width with pixels
+	=> JS :
+		+ writing good code for handling muiltiple views with javascript ++
+		- functions are redundant and can be reduced to a single function with multiple parameters to handle each case (but overall ok) 
+
+========================================================================================
+
+4 - About-Us Page :
+	=> HTML :
+		+ code is very well structured
+		+ code is well commented
+		- don't use a single container to hold all sections
+		- (in our-team section content) <aside> is not the most proper semantic tag to be used in this part, revise other semantic tags used in this page
+		- multiple footers are not SEO Friendly , consider reading about the proper use of each semantic tag as they should be meaningful to the content they hold 
+	=> CSS :
+		+ using variables in code 
+		+ code is well commented
+		+ using (flex) to move elements 
+		+ applying reasonable margin - padding to elements
+		+ giving classes meaningful and descriptive names
+		+ separating responsive design code from the original code is a very good practice ++
+		- (in about-us.our-team.talk) button size is better controlled by padding "only" instead of using width,height
+
+========================================================================================
+
+5 - Login & SignUp Pages :
+	=> HTML :
+		+ code is very well structured
+		
+	=> CSS :
+		+ using variables in code 
+		+ code is well commented
+		+ using (flex) to move elements inside login div 
+		+ applying reasonable margin - padding to elements
+		+ giving classes meaningful and descriptive names
+		+ using validation on input fields
+		- float is not used properly as the login div should 've been given a float left and the clearfix div should 've been used after (refer to the session or ask any of the mentors)
+	=> (for the responsive view in both pages)
+		- giving the body a background image and 100vh is not reasonable, instead use a div and apply these properties to it 
+========================================================================================
+
+6 - Nav-bar and Footer: 
+	+ code is very well structured, responsive 
+	
+	
+
+========================================================================================			
+
+7 - Product Details Page :
+	=> HTML :
+		+ code is very well structured
+		+ code is well commented
+		
+	=> CSS :
+		+ using variables in code 
+		+ code is well commented
+		+ using (flex) to move elements
+		+ applying reasonable margin - padding to elements
+		+ giving classes meaningful and descriptive names
+		+ overall implementation is great ++
+		
+========================================================================================
+		
+Overall Feedback:  
+	+ great teamwork  
+	+ all of the team members participated 
+	+ project discussion went great , each one of you described their role properly 
+	
+Evaluation : HTML : 7/8    CSS : 12/15   bonus: 11/16   total : 29
