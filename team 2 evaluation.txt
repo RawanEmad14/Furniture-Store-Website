@@ -117,4 +117,4 @@ Overall Feedback:
 	+ all of the team members participated 
 	+ project discussion went great , each one of you described their role properly 
 	
-Evaluation : HTML : 7/8    CSS : 12/15   bonus: 11/16   total : 29
+Evaluation : HTML : 7/8    CSS : 12/15   bonus: 11/16   total : 30
